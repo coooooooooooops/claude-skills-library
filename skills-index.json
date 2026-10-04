@@ -1,0 +1,3122 @@
+[
+  {
+    "name": "decision-matrix",
+    "category": "01-decision-making",
+    "description": "Build a weighted decision matrix to compare options against criteria. Use whenever the user is choosing between 2+ options (tools, jobs, purchases, designs, vendors, plans), says 'which should I pick', 'help me decide', 'compare these', or is stuck between choices, even if they never say 'matrix'.",
+    "path": "skills/01-decision-making/decision-matrix"
+  },
+  {
+    "name": "pre-mortem",
+    "category": "01-decision-making",
+    "description": "Run a pre-mortem: assume the plan already failed and work backwards to find why. Use before launching a project, committing to a plan, starting a build, or whenever the user says 'what could go wrong', 'stress test this', 'risks', or shares a plan to review.",
+    "path": "skills/01-decision-making/pre-mortem"
+  },
+  {
+    "name": "two-way-door",
+    "category": "01-decision-making",
+    "description": "Classify a decision as reversible (two-way door) or irreversible (one-way door) and set the right amount of deliberation. Use when the user is overthinking, procrastinating, or about to make a big commitment, or asks 'how much time should I spend deciding'.",
+    "path": "skills/01-decision-making/two-way-door"
+  },
+  {
+    "name": "second-order-thinking",
+    "category": "01-decision-making",
+    "description": "Trace consequences of a decision beyond the immediate effect: second and third-order impacts, feedback loops, and incentives. Use for policy, product, pricing, career, or life choices where 'and then what happens?' matters.",
+    "path": "skills/01-decision-making/second-order-thinking"
+  },
+  {
+    "name": "devils-advocate",
+    "category": "01-decision-making",
+    "description": "Argue the strongest case against the user's idea, plan, or belief to test it. Use when the user asks for pushback, 'poke holes', 'tell me why I'm wrong', or shares a decision they seem overly sure or unsure about.",
+    "path": "skills/01-decision-making/devils-advocate"
+  },
+  {
+    "name": "bias-check",
+    "category": "01-decision-making",
+    "description": "Audit a decision or argument for cognitive biases (sunk cost, confirmation, anchoring, survivorship, overconfidence, planning fallacy, loss aversion, availability). Use when reasoning feels emotional, rushed, or one-sided.",
+    "path": "skills/01-decision-making/bias-check"
+  },
+  {
+    "name": "first-principles",
+    "category": "01-decision-making",
+    "description": "Break a problem down to fundamental truths and rebuild solutions from scratch instead of by analogy. Use when conventional answers feel stuck, costs seem fixed, or the user asks 'why is it done this way' or 'is there a better way'.",
+    "path": "skills/01-decision-making/first-principles"
+  },
+  {
+    "name": "big-life-decision",
+    "category": "01-decision-making",
+    "description": "Guide a high-stakes personal decision (moving, quitting, relationships, school, big purchases) with values clarification, regret minimization, and small experiments. Use whenever the user is wrestling with a major life choice.",
+    "path": "skills/01-decision-making/big-life-decision"
+  },
+  {
+    "name": "opportunity-cost",
+    "category": "01-decision-making",
+    "description": "Make the hidden cost of a choice explicit: what else the money, time, or attention could buy. Use when evaluating purchases, projects, side quests, subscriptions, or time commitments.",
+    "path": "skills/01-decision-making/opportunity-cost"
+  },
+  {
+    "name": "expected-value",
+    "category": "01-decision-making",
+    "description": "Evaluate uncertain choices with probabilities, payoffs, and expected value, including asymmetric risks and ruin avoidance. Use for bets, investments, launches, negotiations, or any 'what are the odds' decision.",
+    "path": "skills/01-decision-making/expected-value"
+  },
+  {
+    "name": "buy-vs-build",
+    "category": "01-decision-making",
+    "description": "Decide whether to buy, subscribe, use open source, or build something custom. Use for software, tooling, equipment, or services when the user asks 'should I build this myself' or 'is it worth paying for'.",
+    "path": "skills/01-decision-making/buy-vs-build"
+  },
+  {
+    "name": "decision-journal",
+    "category": "01-decision-making",
+    "description": "Create and maintain a decision journal entry that records the decision, reasoning, expectations, and confidence so outcomes can be reviewed later. Use after any meaningful decision or when the user wants to learn from past choices.",
+    "path": "skills/01-decision-making/decision-journal"
+  },
+  {
+    "name": "code-review",
+    "category": "02-coding",
+    "description": "Perform a structured, prioritized code review covering correctness, security, performance, readability, and tests. Use whenever the user pastes code, a diff, or a PR and asks for review, feedback, 'is this good', or 'what's wrong with this'.",
+    "path": "skills/02-coding/code-review"
+  },
+  {
+    "name": "debug-protocol",
+    "category": "02-coding",
+    "description": "Systematic debugging: reproduce, isolate, hypothesize, test, fix, and prevent regressions. Use when the user reports a bug, error message, stack trace, crash, or says 'it doesn't work' or 'why is this happening'.",
+    "path": "skills/02-coding/debug-protocol"
+  },
+  {
+    "name": "refactor-safely",
+    "category": "02-coding",
+    "description": "Refactor code in small, behavior-preserving steps with tests as a safety net. Use when the user wants to clean up, restructure, simplify, deduplicate, or modernize existing code.",
+    "path": "skills/02-coding/refactor-safely"
+  },
+  {
+    "name": "test-writer",
+    "category": "02-coding",
+    "description": "Write thorough, maintainable tests (unit, integration, property-based) with good names, edge cases, and minimal mocking. Use when the user asks for tests, coverage, TDD, or wants to verify code works.",
+    "path": "skills/02-coding/test-writer"
+  },
+  {
+    "name": "git-commit-pr",
+    "category": "02-coding",
+    "description": "Write clean commit messages, branch strategy, and pull request descriptions, and fix common git messes. Use when the user mentions commit, PR, rebase, merge conflict, git history, or asks how to undo something in git.",
+    "path": "skills/02-coding/git-commit-pr"
+  },
+  {
+    "name": "api-design",
+    "category": "02-coding",
+    "description": "Design clean REST, GraphQL, or RPC APIs with consistent naming, versioning, pagination, errors, auth, and idempotency. Use when the user is designing endpoints, schemas, SDK surfaces, or reviewing an API.",
+    "path": "skills/02-coding/api-design"
+  },
+  {
+    "name": "sql-optimizer",
+    "category": "02-coding",
+    "description": "Write, explain, and optimize SQL queries and schemas: indexes, joins, EXPLAIN plans, N+1 problems. Use whenever the user shares SQL, a slow query, a schema, or asks about database performance.",
+    "path": "skills/02-coding/sql-optimizer"
+  },
+  {
+    "name": "security-audit",
+    "category": "02-coding",
+    "description": "Audit code and architecture for common vulnerabilities (OWASP Top 10, secrets, authz, injection, SSRF, unsafe deserialization, dependency risk) and recommend defensive fixes. Use when reviewing code for security, hardening an app, or handling user input, auth, or payments.",
+    "path": "skills/02-coding/security-audit"
+  },
+  {
+    "name": "performance-profiling",
+    "category": "02-coding",
+    "description": "Find and fix performance bottlenecks using measurement: profiling, benchmarks, algorithmic analysis, caching, and memory. Use when something is slow, laggy, uses too much memory, or the user asks to optimize.",
+    "path": "skills/02-coding/performance-profiling"
+  },
+  {
+    "name": "adr-writer",
+    "category": "02-coding",
+    "description": "Write Architecture Decision Records capturing context, options, decision, and consequences. Use when making or documenting technical decisions like stack choice, database, framework, or architecture changes.",
+    "path": "skills/02-coding/adr-writer"
+  },
+  {
+    "name": "regex-builder",
+    "category": "02-coding",
+    "description": "Build, explain, and test regular expressions with examples and edge cases. Use whenever the user needs a regex, wants to parse or validate text patterns, or asks what a regex does.",
+    "path": "skills/02-coding/regex-builder"
+  },
+  {
+    "name": "readme-writer",
+    "category": "02-coding",
+    "description": "Write clear, attractive README files and project docs: purpose, quickstart, usage, configuration, contributing, license. Use when the user is about to publish a repo, asks for docs, or shares code with no README.",
+    "path": "skills/02-coding/readme-writer"
+  },
+  {
+    "name": "dependency-upgrade",
+    "category": "02-coding",
+    "description": "Plan and execute dependency and framework upgrades safely: changelog review, breaking changes, codemods, staged rollout. Use when upgrading packages, languages, or frameworks, or when audit warnings appear.",
+    "path": "skills/02-coding/dependency-upgrade"
+  },
+  {
+    "name": "error-handling",
+    "category": "02-coding",
+    "description": "Design robust error handling, validation, retries, timeouts, and logging. Use when code crashes on bad input, lacks failure paths, or the user asks about exceptions, resilience, or graceful degradation.",
+    "path": "skills/02-coding/error-handling"
+  },
+  {
+    "name": "code-explainer",
+    "category": "02-coding",
+    "description": "Explain unfamiliar code clearly at the user's level, with a walkthrough, data flow, and diagrams. Use when the user pastes code and asks 'what does this do', 'explain', or is onboarding to a codebase.",
+    "path": "skills/02-coding/code-explainer"
+  },
+  {
+    "name": "shell-scripting",
+    "category": "02-coding",
+    "description": "Write safe, portable bash/zsh scripts and one-liners with error handling and clear usage. Use when the user wants automation, a CLI tool, a cron job, file processing, or help with terminal commands.",
+    "path": "skills/02-coding/shell-scripting"
+  },
+  {
+    "name": "docker-setup",
+    "category": "02-coding",
+    "description": "Create Dockerfiles, docker-compose setups, and dev containers with small images, caching, healthchecks, and security. Use when containerizing an app or debugging Docker problems.",
+    "path": "skills/02-coding/docker-setup"
+  },
+  {
+    "name": "ci-cd-pipeline",
+    "category": "02-coding",
+    "description": "Design CI/CD pipelines (GitHub Actions, GitLab CI) with lint, test, build, cache, release, and deploy stages. Use when the user wants automation on push, automated releases, or deployment.",
+    "path": "skills/02-coding/ci-cd-pipeline"
+  },
+  {
+    "name": "database-schema-design",
+    "category": "02-coding",
+    "description": "Design relational and document schemas with proper normalization, keys, constraints, indexes, and migrations. Use when modeling data for an app, game save system, inventory, or analytics.",
+    "path": "skills/02-coding/database-schema-design"
+  },
+  {
+    "name": "tech-debt-triage",
+    "category": "02-coding",
+    "description": "Inventory and prioritize technical debt by impact, effort, and risk, and turn it into an actionable plan. Use when a codebase feels messy, slow to change, or the user asks what to fix first.",
+    "path": "skills/02-coding/tech-debt-triage"
+  },
+  {
+    "name": "algorithm-solver",
+    "category": "02-coding",
+    "description": "Solve algorithm and data-structure problems with problem restatement, approach comparison, complexity, and clean code. Use for interview prep, competitive programming, or choosing the right data structure.",
+    "path": "skills/02-coding/algorithm-solver"
+  },
+  {
+    "name": "godot-gdscript",
+    "category": "02-coding",
+    "description": "Build Godot 4 games with GDScript: scene architecture, signals, autoloads, resources, physics, input, multiplayer, and performance. Use whenever the user mentions Godot, GDScript, .tscn, or building a 2D/3D game in Godot.",
+    "path": "skills/02-coding/godot-gdscript"
+  },
+  {
+    "name": "electron-app",
+    "category": "02-coding",
+    "description": "Build desktop apps with Electron: main/renderer architecture, IPC, security, packaging, auto-update. Use when the user wants a cross-platform desktop app or wrapper around web tech.",
+    "path": "skills/02-coding/electron-app"
+  },
+  {
+    "name": "swift-macos-app",
+    "category": "02-coding",
+    "description": "Build native macOS apps in Swift/SwiftUI/AppKit: menu bar apps, windows, drag-and-drop, notch UI, sandboxing, and distribution. Use when the user wants a Mac app, menu bar utility, or notch shelf-style tool.",
+    "path": "skills/02-coding/swift-macos-app"
+  },
+  {
+    "name": "web-scraper-builder",
+    "category": "02-coding",
+    "description": "Design ethical, resilient web scrapers and data collectors: HTTP vs. headless browser, parsing, rate limiting, caching, and storage. Use when the user wants to collect public data or build a price tracker.",
+    "path": "skills/02-coding/web-scraper-builder"
+  },
+  {
+    "name": "single-file-html-game",
+    "category": "02-coding",
+    "description": "Build complete browser games in one HTML file with canvas, game loop, input, sprites, audio, and save data. Use when the user wants a quick playable game, prototype, or jam entry.",
+    "path": "skills/02-coding/single-file-html-game"
+  },
+  {
+    "name": "logging-observability",
+    "category": "02-coding",
+    "description": "Add structured logging, metrics, tracing, and alerts so systems are debuggable in production. Use when the user asks how to monitor or troubleshoot a deployed system.",
+    "path": "skills/02-coding/logging-observability"
+  },
+  {
+    "name": "code-migration",
+    "category": "02-coding",
+    "description": "Migrate code between languages, frameworks, or versions (JS to TS, Python 2 to 3, REST to GraphQL, Godot 3 to 4) with parity checks. Use when porting or rewriting.",
+    "path": "skills/02-coding/code-migration"
+  },
+  {
+    "name": "workout-program-designer",
+    "category": "03-gym-fitness",
+    "description": "Design a personalized strength or hypertrophy training program with splits, exercise selection, sets, reps, and progression. Use whenever the user asks for a gym routine, workout plan, split, or says 'build me a program' for muscle, strength, or general fitness.",
+    "path": "skills/03-gym-fitness/workout-program-designer"
+  },
+  {
+    "name": "progressive-overload-tracker",
+    "category": "03-gym-fitness",
+    "description": "Track lifts and recommend when and how much to increase weight, reps, or sets based on logged performance. Use when the user shares workout logs, stalls on a lift, or asks how to progress.",
+    "path": "skills/03-gym-fitness/progressive-overload-tracker"
+  },
+  {
+    "name": "exercise-form-guide",
+    "category": "03-gym-fitness",
+    "description": "Explain exercise technique with setup, execution cues, common mistakes, and regressions/progressions. Use when the user asks how to do an exercise (squat, deadlift, bench, pull-up, etc.) or wants to fix form.",
+    "path": "skills/03-gym-fitness/exercise-form-guide"
+  },
+  {
+    "name": "mobility-and-warmup",
+    "category": "03-gym-fitness",
+    "description": "Build warm-ups, mobility routines, and stretching sequences tailored to a workout or problem area. Use when the user feels stiff, wants a warm-up, desk-posture relief, or better range of motion.",
+    "path": "skills/03-gym-fitness/mobility-and-warmup"
+  },
+  {
+    "name": "deload-and-recovery-planner",
+    "category": "03-gym-fitness",
+    "description": "Plan deloads, rest days, sleep, and recovery strategies when training fatigue builds. Use when the user feels run down, plateaued, or asks about overtraining and recovery.",
+    "path": "skills/03-gym-fitness/deload-and-recovery-planner"
+  },
+  {
+    "name": "home-gym-planner",
+    "category": "03-gym-fitness",
+    "description": "Plan a home gym by budget and space: equipment priorities, used-gear tips, layout, and programs for what you own. Use when the user is buying fitness equipment or training at home.",
+    "path": "skills/03-gym-fitness/home-gym-planner"
+  },
+  {
+    "name": "running-plan",
+    "category": "03-gym-fitness",
+    "description": "Create beginner-to-intermediate running plans (5K, 10K, half marathon) with easy/long/interval runs, walk breaks, and strength work. Use when the user wants to start running or train for a race.",
+    "path": "skills/03-gym-fitness/running-plan"
+  },
+  {
+    "name": "workout-log-analyzer",
+    "category": "03-gym-fitness",
+    "description": "Analyze workout history for volume, frequency, balance, and trends, and suggest adjustments. Use when the user pastes a log, CSV, or notes from past training.",
+    "path": "skills/03-gym-fitness/workout-log-analyzer"
+  },
+  {
+    "name": "calisthenics-progressions",
+    "category": "03-gym-fitness",
+    "description": "Plan bodyweight training progressions toward pull-ups, push-ups, dips, handstands, and muscle-ups. Use when the user trains without weights or wants specific skills.",
+    "path": "skills/03-gym-fitness/calisthenics-progressions"
+  },
+  {
+    "name": "weekly-review",
+    "category": "04-productivity",
+    "description": "Run a structured weekly review: wins, lessons, open loops, next week's priorities. Use on Fridays or Sundays or when the user says 'weekly review', 'plan my week', or feels behind.",
+    "path": "skills/04-productivity/weekly-review"
+  },
+  {
+    "name": "daily-planner",
+    "category": "04-productivity",
+    "description": "Build a realistic daily plan from tasks, energy, and calendar, with time blocks and buffers. Use when the user asks what to do today or feels overwhelmed.",
+    "path": "skills/04-productivity/daily-planner"
+  },
+  {
+    "name": "eisenhower-prioritizer",
+    "category": "04-productivity",
+    "description": "Sort tasks by urgency and importance and decide what to do, schedule, delegate, or delete. Use when the user dumps a long to-do list.",
+    "path": "skills/04-productivity/eisenhower-prioritizer"
+  },
+  {
+    "name": "goal-setting-okr",
+    "category": "04-productivity",
+    "description": "Turn ambitions into clear goals with OKRs or SMART milestones and weekly actions. Use when the user sets goals for the year, quarter, or a project.",
+    "path": "skills/04-productivity/goal-setting-okr"
+  },
+  {
+    "name": "habit-builder",
+    "category": "04-productivity",
+    "description": "Design habits using cues, tiny starts, environment design, and tracking. Use when the user wants to build or break a habit.",
+    "path": "skills/04-productivity/habit-builder"
+  },
+  {
+    "name": "deep-work-session",
+    "category": "04-productivity",
+    "description": "Set up and run a focused deep-work session: goal, distraction blocking, timers, and review. Use when the user needs to concentrate on a hard task.",
+    "path": "skills/04-productivity/deep-work-session"
+  },
+  {
+    "name": "meeting-notes",
+    "category": "04-productivity",
+    "description": "Turn raw meeting notes or transcripts into decisions, action items, owners, and deadlines. Use when the user pastes notes or asks to summarize a meeting.",
+    "path": "skills/04-productivity/meeting-notes"
+  },
+  {
+    "name": "project-breakdown",
+    "category": "04-productivity",
+    "description": "Break a big project into milestones, tasks, dependencies, estimates, and a first-week plan. Use when the user has a large goal and doesn't know where to start.",
+    "path": "skills/04-productivity/project-breakdown"
+  },
+  {
+    "name": "time-audit",
+    "category": "04-productivity",
+    "description": "Audit how time is spent, find leaks, and reallocate toward priorities. Use when the user asks where their time goes.",
+    "path": "skills/04-productivity/time-audit"
+  },
+  {
+    "name": "email-writer",
+    "category": "04-productivity",
+    "description": "Write clear, concise, tone-appropriate emails and replies for work, school, and negotiation. Use when the user needs to draft or improve an email or message.",
+    "path": "skills/04-productivity/email-writer"
+  },
+  {
+    "name": "budget-planner",
+    "category": "05-life",
+    "description": "Create a simple personal budget with needs/wants/savings, tracking categories, and goals. Use when the user wants to manage spending, save, or pay off debt.",
+    "path": "skills/05-life/budget-planner"
+  },
+  {
+    "name": "travel-planner",
+    "category": "05-life",
+    "description": "Plan trips with itinerary, budget, logistics, and local tips tailored to preferences. Use for any trip planning request.",
+    "path": "skills/05-life/travel-planner"
+  },
+  {
+    "name": "career-planner",
+    "category": "05-life",
+    "description": "Plan career moves: skills gap analysis, resume positioning, networking, and 90-day plans. Use when the user considers a job change, promotion, or new field.",
+    "path": "skills/05-life/career-planner"
+  },
+  {
+    "name": "interview-prep",
+    "category": "05-life",
+    "description": "Prepare for interviews with story banks (STAR), role research, questions to ask, and mock practice. Use when the user has an interview coming.",
+    "path": "skills/05-life/interview-prep"
+  },
+  {
+    "name": "negotiation-coach",
+    "category": "05-life",
+    "description": "Prepare for negotiations (salary, rent, purchases, contracts) with anchors, BATNA, and scripts. Use when the user needs to negotiate.",
+    "path": "skills/05-life/negotiation-coach"
+  },
+  {
+    "name": "buying-research",
+    "category": "05-life",
+    "description": "Research purchases methodically: needs, shortlist, criteria, tradeoffs, and where to buy. Use when the user asks 'what should I buy' for gear, electronics, or big items.",
+    "path": "skills/05-life/buying-research"
+  },
+  {
+    "name": "home-project-planner",
+    "category": "05-life",
+    "description": "Plan DIY and home projects with materials, tools, steps, safety, and budget. Use when the user wants to fix, build, or renovate something at home.",
+    "path": "skills/05-life/home-project-planner"
+  },
+  {
+    "name": "meal-planner",
+    "category": "05-life",
+    "description": "Create weekly meal plans and shopping lists around taste, time, budget, and dietary needs. Use when the user asks what to cook or eat.",
+    "path": "skills/05-life/meal-planner"
+  },
+  {
+    "name": "pet-care-helper",
+    "category": "05-life",
+    "description": "Provide pet care guidance: training basics, routines, and enrichment for dogs and cats. Use when the user asks about caring for or training a pet.",
+    "path": "skills/05-life/pet-care-helper"
+  },
+  {
+    "name": "editor",
+    "category": "06-writing",
+    "description": "Edit writing for clarity, concision, structure, and tone while keeping the author's voice. Use when the user pastes a draft and asks to improve, proofread, tighten, or give feedback.",
+    "path": "skills/06-writing/editor"
+  },
+  {
+    "name": "voice-matcher",
+    "category": "06-writing",
+    "description": "Learn a writing voice from samples and write new text in that voice. Use when the user wants copy 'in my style' or to match a brand tone.",
+    "path": "skills/06-writing/voice-matcher"
+  },
+  {
+    "name": "summarizer",
+    "category": "06-writing",
+    "description": "Summarize documents, articles, threads, or transcripts at multiple lengths with key points and action items. Use when the user pastes long text and wants the gist.",
+    "path": "skills/06-writing/summarizer"
+  },
+  {
+    "name": "outline-builder",
+    "category": "06-writing",
+    "description": "Create strong outlines for essays, articles, talks, and reports with a clear thesis and flow. Use when starting any writing project.",
+    "path": "skills/06-writing/outline-builder"
+  },
+  {
+    "name": "headline-and-hook",
+    "category": "06-writing",
+    "description": "Generate headlines, titles, subject lines, and opening hooks with variations and tests. Use when the user needs a title, tagline, or strong opening.",
+    "path": "skills/06-writing/headline-and-hook"
+  },
+  {
+    "name": "technical-writing",
+    "category": "06-writing",
+    "description": "Write clear technical documentation, tutorials, how-to guides, and API docs. Use when the user needs docs for developers or end users.",
+    "path": "skills/06-writing/technical-writing"
+  },
+  {
+    "name": "storytelling",
+    "category": "06-writing",
+    "description": "Craft compelling stories for presentations, brands, and fiction using structure, stakes, and specific detail. Use when the user wants to tell a story or make a pitch memorable.",
+    "path": "skills/06-writing/storytelling"
+  },
+  {
+    "name": "feynman-explainer",
+    "category": "07-learning",
+    "description": "Explain any concept simply using the Feynman technique: plain language, analogies, and gap-finding. Use when the user says 'explain like I'm five', 'I don't get', or wants to truly understand a topic.",
+    "path": "skills/07-learning/feynman-explainer"
+  },
+  {
+    "name": "flashcard-maker",
+    "category": "07-learning",
+    "description": "Create effective spaced-repetition flashcards (Anki-style) from notes, text, or topics. Use when the user wants to memorize or study material.",
+    "path": "skills/07-learning/flashcard-maker"
+  },
+  {
+    "name": "study-plan",
+    "category": "07-learning",
+    "description": "Build a study plan with milestones, spaced practice, and active recall for exams or skills. Use when the user prepares for a test or learns something new.",
+    "path": "skills/07-learning/study-plan"
+  },
+  {
+    "name": "socratic-tutor",
+    "category": "07-learning",
+    "description": "Teach by asking guiding questions instead of giving answers, adapting to the learner. Use when the user wants to learn deeply or practice problem-solving.",
+    "path": "skills/07-learning/socratic-tutor"
+  },
+  {
+    "name": "reading-notes",
+    "category": "07-learning",
+    "description": "Extract and organize notes from books, papers, and articles into insights, quotes, and action items. Use when the user shares reading material.",
+    "path": "skills/07-learning/reading-notes"
+  },
+  {
+    "name": "language-learning",
+    "category": "07-learning",
+    "description": "Coach language learning with vocabulary, grammar, speaking practice, and daily routines. Use when the user studies a foreign language.",
+    "path": "skills/07-learning/language-learning"
+  },
+  {
+    "name": "game-design-doc",
+    "category": "08-creative-gamedev",
+    "description": "Write a game design document: pillars, core loop, mechanics, progression, content, art direction, and scope. Use when the user is starting or planning a game.",
+    "path": "skills/08-creative-gamedev/game-design-doc"
+  },
+  {
+    "name": "game-balance",
+    "category": "08-creative-gamedev",
+    "description": "Balance game economies, difficulty, progression curves, and drop rates with math and playtest plans. Use when tuning a game.",
+    "path": "skills/08-creative-gamedev/game-balance"
+  },
+  {
+    "name": "level-design",
+    "category": "08-creative-gamedev",
+    "description": "Design levels and maps with pacing, teaching, flow, landmarks, and risk/reward. Use when building levels, stages, or open-world areas.",
+    "path": "skills/08-creative-gamedev/level-design"
+  },
+  {
+    "name": "worldbuilding",
+    "category": "08-creative-gamedev",
+    "description": "Build coherent fictional worlds: geography, cultures, factions, history, and conflict. Use for novels, games, and tabletop campaigns.",
+    "path": "skills/08-creative-gamedev/worldbuilding"
+  },
+  {
+    "name": "character-creator",
+    "category": "08-creative-gamedev",
+    "description": "Create memorable characters with motivations, flaws, voice, arcs, and relationships. Use for fiction, games, and roleplay.",
+    "path": "skills/08-creative-gamedev/character-creator"
+  },
+  {
+    "name": "narrative-dialogue",
+    "category": "08-creative-gamedev",
+    "description": "Write natural, character-driven dialogue and branching conversations for games and stories. Use for NPC dialogue, cutscenes, and scripts.",
+    "path": "skills/08-creative-gamedev/narrative-dialogue"
+  },
+  {
+    "name": "game-juice-polish",
+    "category": "08-creative-gamedev",
+    "description": "Add game feel and polish: screen shake, hit-stop, particles, easing, sound, UI feedback. Use when a game feels flat.",
+    "path": "skills/08-creative-gamedev/game-juice-polish"
+  },
+  {
+    "name": "procedural-generation",
+    "category": "08-creative-gamedev",
+    "description": "Design procedural generation: noise, wave function collapse, BSP dungeons, random tables, and seeded determinism. Use for roguelikes, terrain, and loot.",
+    "path": "skills/08-creative-gamedev/procedural-generation"
+  },
+  {
+    "name": "shop-sim-economy",
+    "category": "08-creative-gamedev",
+    "description": "Design shop and business-sim loops: customers, orders, upgrades, staff, and unlock curves. Use for tycoon, cafe, and shop-management games.",
+    "path": "skills/08-creative-gamedev/shop-sim-economy"
+  },
+  {
+    "name": "pixel-art-spec",
+    "category": "08-creative-gamedev",
+    "description": "Define pixel-art style guides: resolution, palette, tiles, animation frames, and tooling. Use when planning retro or 16-bit visuals.",
+    "path": "skills/08-creative-gamedev/pixel-art-spec"
+  },
+  {
+    "name": "idea-validator",
+    "category": "09-business",
+    "description": "Validate a business or product idea with customer problem, market size, competition, and cheap tests. Use when the user pitches an idea.",
+    "path": "skills/09-business/idea-validator"
+  },
+  {
+    "name": "lean-canvas",
+    "category": "09-business",
+    "description": "Create a Lean Canvas: problem, solution, metrics, value prop, channels, revenue, costs, and advantage. Use for early-stage planning.",
+    "path": "skills/09-business/lean-canvas"
+  },
+  {
+    "name": "pricing-strategy",
+    "category": "09-business",
+    "description": "Set pricing using value, costs, competitors, and psychology, with tiers and tests. Use when pricing a product or service.",
+    "path": "skills/09-business/pricing-strategy"
+  },
+  {
+    "name": "competitor-analysis",
+    "category": "09-business",
+    "description": "Analyze competitors' products, positioning, pricing, and gaps. Use for market research.",
+    "path": "skills/09-business/competitor-analysis"
+  },
+  {
+    "name": "landing-page-copy",
+    "category": "09-business",
+    "description": "Write high-converting landing page copy: headline, benefits, proof, objections, and calls to action. Use when launching a product or page.",
+    "path": "skills/09-business/landing-page-copy"
+  },
+  {
+    "name": "cold-outreach",
+    "category": "09-business",
+    "description": "Write personalized outreach messages and follow-up sequences that respect the recipient. Use for sales, partnerships, and networking.",
+    "path": "skills/09-business/cold-outreach"
+  },
+  {
+    "name": "customer-interview",
+    "category": "09-business",
+    "description": "Plan and analyze customer discovery interviews using past-behavior questions. Use when validating a product or learning users.",
+    "path": "skills/09-business/customer-interview"
+  },
+  {
+    "name": "resale-flip-analyzer",
+    "category": "09-business",
+    "description": "Analyze resale opportunities for watches, sneakers, electronics, and collectibles: sourcing price, fees, shipping, comps, and margin. Use when the user evaluates flipping an item or building a resale tool.",
+    "path": "skills/09-business/resale-flip-analyzer"
+  },
+  {
+    "name": "financial-model-basics",
+    "category": "09-business",
+    "description": "Build simple financial models: revenue, costs, margins, runway, and break-even. Use for startup and side-project planning.",
+    "path": "skills/09-business/financial-model-basics"
+  },
+  {
+    "name": "fact-check",
+    "category": "10-research-and-analysis",
+    "description": "Verify claims systematically by checking sources, dates, context, and consensus. Use when the user asks if something is true.",
+    "path": "skills/10-research-and-analysis/fact-check"
+  },
+  {
+    "name": "source-evaluator",
+    "category": "10-research-and-analysis",
+    "description": "Assess source credibility: author, evidence, bias, recency, and corroboration. Use when comparing sources or reading research.",
+    "path": "skills/10-research-and-analysis/source-evaluator"
+  },
+  {
+    "name": "data-analysis-plan",
+    "category": "10-research-and-analysis",
+    "description": "Plan data analysis: question, data, cleaning, methods, visualization, and caveats. Use when the user has a dataset or question to analyze.",
+    "path": "skills/10-research-and-analysis/data-analysis-plan"
+  },
+  {
+    "name": "compare-options-report",
+    "category": "10-research-and-analysis",
+    "description": "Produce a clear comparison report of options with criteria, evidence, and a recommendation. Use when the user wants a research-backed comparison.",
+    "path": "skills/10-research-and-analysis/compare-options-report"
+  },
+  {
+    "name": "literature-review",
+    "category": "10-research-and-analysis",
+    "description": "Structure a literature review: scope, search strategy, themes, gaps, and synthesis. Use for academic or deep research.",
+    "path": "skills/10-research-and-analysis/literature-review"
+  },
+  {
+    "name": "skill-builder",
+    "category": "11-meta-and-ai",
+    "description": "Design and write new Claude skills: purpose, trigger description, instructions, resources, and tests. Use when the user wants to create or improve a skill.",
+    "path": "skills/11-meta-and-ai/skill-builder"
+  },
+  {
+    "name": "prompt-engineer",
+    "category": "11-meta-and-ai",
+    "description": "Write and improve prompts using clear context, examples, constraints, and output formats. Use when the user wants better results from an AI model.",
+    "path": "skills/11-meta-and-ai/prompt-engineer"
+  },
+  {
+    "name": "claude-md-writer",
+    "category": "11-meta-and-ai",
+    "description": "Write CLAUDE.md or project instruction files so coding agents understand the repo: commands, architecture, conventions. Use when setting up a project for Claude Code or similar agents.",
+    "path": "skills/11-meta-and-ai/claude-md-writer"
+  },
+  {
+    "name": "agent-workflow-designer",
+    "category": "11-meta-and-ai",
+    "description": "Design multi-step AI agent workflows: tools, memory, guardrails, evals, and human checkpoints. Use when building automations or agents.",
+    "path": "skills/11-meta-and-ai/agent-workflow-designer"
+  },
+  {
+    "name": "mcp-server-planner",
+    "category": "11-meta-and-ai",
+    "description": "Plan and scaffold MCP servers: tools, resources, schemas, auth, and testing. Use when the user wants to connect Claude to a service or build a connector.",
+    "path": "skills/11-meta-and-ai/mcp-server-planner"
+  },
+  {
+    "name": "terraform-iac",
+    "category": "12-devops-and-cloud",
+    "description": "Write and review Terraform/OpenTofu infrastructure as code with modules, remote state, and safe applies. Use when defining cloud resources, reading a terraform plan, or structuring an IaC repo.",
+    "path": "skills/12-devops-and-cloud/terraform-iac"
+  },
+  {
+    "name": "kubernetes-manifests",
+    "category": "12-devops-and-cloud",
+    "description": "Write and debug Kubernetes manifests: Deployments, Services, Ingress, ConfigMaps, probes, and resource limits. Use when deploying to k8s or troubleshooting CrashLoopBackOff, pending pods, or networking.",
+    "path": "skills/12-devops-and-cloud/kubernetes-manifests"
+  },
+  {
+    "name": "helm-charts",
+    "category": "12-devops-and-cloud",
+    "description": "Create and maintain Helm charts with templated values, helpers, and environment overrides. Use when packaging apps for Kubernetes or fixing chart templating errors.",
+    "path": "skills/12-devops-and-cloud/helm-charts"
+  },
+  {
+    "name": "aws-architecture",
+    "category": "12-devops-and-cloud",
+    "description": "Design AWS architectures for web apps, APIs, data pipelines, and event systems with sensible service choices. Use when choosing between EC2, Lambda, ECS, RDS, S3, SQS, or sizing a cloud design.",
+    "path": "skills/12-devops-and-cloud/aws-architecture"
+  },
+  {
+    "name": "cloud-cost-optimizer",
+    "category": "12-devops-and-cloud",
+    "description": "Reduce cloud spend by right-sizing, reserved capacity, storage tiers, and removing waste. Use when a cloud bill is too high or the user asks how to cut hosting costs.",
+    "path": "skills/12-devops-and-cloud/cloud-cost-optimizer"
+  },
+  {
+    "name": "linux-sysadmin",
+    "category": "12-devops-and-cloud",
+    "description": "Administer Linux servers: users, permissions, systemd, networking, disk, logs, and hardening basics. Use when troubleshooting a server, writing systemd units, or setting up a VPS.",
+    "path": "skills/12-devops-and-cloud/linux-sysadmin"
+  },
+  {
+    "name": "nginx-config",
+    "category": "12-devops-and-cloud",
+    "description": "Write and debug nginx configs: reverse proxy, TLS, caching, rate limits, and static hosting. Use when setting up a web server, fixing 502/504 errors, or redirecting traffic.",
+    "path": "skills/12-devops-and-cloud/nginx-config"
+  },
+  {
+    "name": "incident-response",
+    "category": "12-devops-and-cloud",
+    "description": "Run a production incident: triage, mitigate, communicate, and recover. Use when a service is down, errors spike, or the user needs an incident checklist.",
+    "path": "skills/12-devops-and-cloud/incident-response"
+  },
+  {
+    "name": "postmortem-writer",
+    "category": "12-devops-and-cloud",
+    "description": "Write blameless postmortems with timeline, root cause, impact, and action items. Use after an outage or failure to document learning.",
+    "path": "skills/12-devops-and-cloud/postmortem-writer"
+  },
+  {
+    "name": "runbook-writer",
+    "category": "12-devops-and-cloud",
+    "description": "Create operational runbooks with symptoms, diagnosis steps, commands, and escalation paths. Use when documenting how to operate or recover a service.",
+    "path": "skills/12-devops-and-cloud/runbook-writer"
+  },
+  {
+    "name": "slo-designer",
+    "category": "12-devops-and-cloud",
+    "description": "Define SLIs, SLOs, and error budgets for services. Use when setting reliability targets or deciding how much risk is acceptable.",
+    "path": "skills/12-devops-and-cloud/slo-designer"
+  },
+  {
+    "name": "deployment-strategies",
+    "category": "12-devops-and-cloud",
+    "description": "Choose and implement deployment strategies: rolling, blue/green, canary, and feature flags. Use when planning releases with minimal downtime and easy rollback.",
+    "path": "skills/12-devops-and-cloud/deployment-strategies"
+  },
+  {
+    "name": "secrets-management",
+    "category": "12-devops-and-cloud",
+    "description": "Manage secrets safely with vaults, environment variables, rotation, and scanning. Use when handling API keys, passwords, or fixing a leaked secret.",
+    "path": "skills/12-devops-and-cloud/secrets-management"
+  },
+  {
+    "name": "backup-and-recovery",
+    "category": "12-devops-and-cloud",
+    "description": "Design backup and disaster-recovery plans with RPO/RTO, testing, and offsite copies. Use when protecting data for apps, servers, or personal projects.",
+    "path": "skills/12-devops-and-cloud/backup-and-recovery"
+  },
+  {
+    "name": "load-testing",
+    "category": "12-devops-and-cloud",
+    "description": "Plan and run load tests with k6, Locust, or JMeter and interpret results. Use when checking capacity, finding bottlenecks, or validating scaling.",
+    "path": "skills/12-devops-and-cloud/load-testing"
+  },
+  {
+    "name": "serverless-design",
+    "category": "12-devops-and-cloud",
+    "description": "Design serverless apps with Lambda or Cloud Functions, queues, and managed services. Use when building event-driven or low-ops backends.",
+    "path": "skills/12-devops-and-cloud/serverless-design"
+  },
+  {
+    "name": "self-hosting-homelab",
+    "category": "12-devops-and-cloud",
+    "description": "Plan self-hosted services and homelabs with Docker, reverse proxies, DNS, VPN, and backups. Use when running your own apps at home or on a VPS.",
+    "path": "skills/12-devops-and-cloud/self-hosting-homelab"
+  },
+  {
+    "name": "pandas-wrangling",
+    "category": "13-data-and-ml",
+    "description": "Clean, reshape, merge, and aggregate data with pandas or polars. Use when the user has a CSV or dataframe task like groupby, joins, pivots, or fixing messy columns.",
+    "path": "skills/13-data-and-ml/pandas-wrangling"
+  },
+  {
+    "name": "data-cleaning",
+    "category": "13-data-and-ml",
+    "description": "Detect and fix data quality problems: duplicates, outliers, missing values, inconsistent formats. Use when data looks wrong or before any analysis.",
+    "path": "skills/13-data-and-ml/data-cleaning"
+  },
+  {
+    "name": "exploratory-analysis",
+    "category": "13-data-and-ml",
+    "description": "Run exploratory data analysis: distributions, relationships, segments, and anomalies. Use when the user hands over a dataset and asks what's interesting.",
+    "path": "skills/13-data-and-ml/exploratory-analysis"
+  },
+  {
+    "name": "sql-analytics-queries",
+    "category": "13-data-and-ml",
+    "description": "Write analytics SQL: window functions, cohorts, funnels, retention, and rolling metrics. Use when the user needs business metrics from a database.",
+    "path": "skills/13-data-and-ml/sql-analytics-queries"
+  },
+  {
+    "name": "dashboard-design",
+    "category": "13-data-and-ml",
+    "description": "Design clear dashboards with the right metrics, charts, and layout. Use when building BI dashboards in Looker, Metabase, Tableau, or custom apps.",
+    "path": "skills/13-data-and-ml/dashboard-design"
+  },
+  {
+    "name": "ab-test-designer",
+    "category": "13-data-and-ml",
+    "description": "Design and analyze A/B tests: hypothesis, sample size, metrics, duration, and significance. Use when testing product or marketing changes.",
+    "path": "skills/13-data-and-ml/ab-test-designer"
+  },
+  {
+    "name": "statistics-explainer",
+    "category": "13-data-and-ml",
+    "description": "Explain statistical concepts and pick the right test: p-values, confidence intervals, regression, Bayesian basics. Use when interpreting results or choosing a method.",
+    "path": "skills/13-data-and-ml/statistics-explainer"
+  },
+  {
+    "name": "ml-model-selection",
+    "category": "13-data-and-ml",
+    "description": "Choose machine learning models and baselines for tabular, text, image, or time-series problems. Use when starting an ML project.",
+    "path": "skills/13-data-and-ml/ml-model-selection"
+  },
+  {
+    "name": "feature-engineering",
+    "category": "13-data-and-ml",
+    "description": "Create and select features that improve models: encoding, scaling, interactions, and time features. Use when improving model performance on tabular data.",
+    "path": "skills/13-data-and-ml/feature-engineering"
+  },
+  {
+    "name": "model-evaluation",
+    "category": "13-data-and-ml",
+    "description": "Evaluate models with proper splits, metrics, calibration, and error analysis. Use when judging whether a model is good or debugging bad predictions.",
+    "path": "skills/13-data-and-ml/model-evaluation"
+  },
+  {
+    "name": "pytorch-training-loop",
+    "category": "13-data-and-ml",
+    "description": "Write and debug PyTorch training loops, datasets, and GPU usage. Use when training neural nets or fixing loss and shape errors.",
+    "path": "skills/13-data-and-ml/pytorch-training-loop"
+  },
+  {
+    "name": "time-series-forecasting",
+    "category": "13-data-and-ml",
+    "description": "Forecast time series with baselines, seasonality, and models like ARIMA, Prophet, or gradient boosting. Use when predicting sales, traffic, or demand.",
+    "path": "skills/13-data-and-ml/time-series-forecasting"
+  },
+  {
+    "name": "data-viz-chooser",
+    "category": "13-data-and-ml",
+    "description": "Pick the right chart and design it honestly: comparisons, trends, distributions, relationships. Use when the user asks how to visualize data.",
+    "path": "skills/13-data-and-ml/data-viz-chooser"
+  },
+  {
+    "name": "etl-pipeline-design",
+    "category": "13-data-and-ml",
+    "description": "Design reliable ETL/ELT pipelines with idempotency, schema checks, and orchestration. Use when moving or transforming data between systems.",
+    "path": "skills/13-data-and-ml/etl-pipeline-design"
+  },
+  {
+    "name": "data-warehouse-modeling",
+    "category": "13-data-and-ml",
+    "description": "Model warehouses with star schemas, dimensions, facts, and slowly changing dimensions. Use when designing analytics databases or dbt projects.",
+    "path": "skills/13-data-and-ml/data-warehouse-modeling"
+  },
+  {
+    "name": "notebook-to-production",
+    "category": "13-data-and-ml",
+    "description": "Turn notebooks into maintainable, tested, deployable code. Use when productionizing a data science prototype.",
+    "path": "skills/13-data-and-ml/notebook-to-production"
+  },
+  {
+    "name": "react-components",
+    "category": "14-frontend-web",
+    "description": "Build clean React components with props, composition, and hooks. Use when writing or reviewing React UI code.",
+    "path": "skills/14-frontend-web/react-components"
+  },
+  {
+    "name": "react-hooks-patterns",
+    "category": "14-frontend-web",
+    "description": "Use React hooks correctly: useEffect pitfalls, custom hooks, memoization, and data fetching. Use when debugging re-renders, stale closures, or infinite loops.",
+    "path": "skills/14-frontend-web/react-hooks-patterns"
+  },
+  {
+    "name": "state-management",
+    "category": "14-frontend-web",
+    "description": "Choose and structure state management: local state, context, Redux, Zustand, or server-state libraries. Use when app state is getting messy.",
+    "path": "skills/14-frontend-web/state-management"
+  },
+  {
+    "name": "css-layout",
+    "category": "14-frontend-web",
+    "description": "Solve CSS layout with flexbox, grid, and positioning. Use when elements won't align, overflow, or the user asks how to lay something out.",
+    "path": "skills/14-frontend-web/css-layout"
+  },
+  {
+    "name": "tailwind-ui",
+    "category": "14-frontend-web",
+    "description": "Build polished interfaces with Tailwind CSS: spacing scale, responsive variants, dark mode, and components. Use when styling with Tailwind.",
+    "path": "skills/14-frontend-web/tailwind-ui"
+  },
+  {
+    "name": "responsive-design",
+    "category": "14-frontend-web",
+    "description": "Make sites work across phones, tablets, and desktops with fluid layouts and breakpoints. Use when a layout breaks on mobile.",
+    "path": "skills/14-frontend-web/responsive-design"
+  },
+  {
+    "name": "web-accessibility",
+    "category": "14-frontend-web",
+    "description": "Audit and fix web accessibility: semantics, keyboard, contrast, ARIA, and screen readers against WCAG. Use when building inclusive interfaces.",
+    "path": "skills/14-frontend-web/web-accessibility"
+  },
+  {
+    "name": "web-performance",
+    "category": "14-frontend-web",
+    "description": "Improve web performance: Core Web Vitals, bundle size, images, caching, and rendering. Use when a site feels slow.",
+    "path": "skills/14-frontend-web/web-performance"
+  },
+  {
+    "name": "nextjs-app",
+    "category": "14-frontend-web",
+    "description": "Build Next.js apps with the App Router, server components, routing, data fetching, and deployment. Use when working with Next.js.",
+    "path": "skills/14-frontend-web/nextjs-app"
+  },
+  {
+    "name": "typescript-types",
+    "category": "14-frontend-web",
+    "description": "Write precise TypeScript types: generics, unions, utility types, and narrowing. Use when fixing type errors or modeling data.",
+    "path": "skills/14-frontend-web/typescript-types"
+  },
+  {
+    "name": "form-validation",
+    "category": "14-frontend-web",
+    "description": "Build robust forms with validation, errors, accessibility, and submission handling. Use when creating signup, checkout, or settings forms.",
+    "path": "skills/14-frontend-web/form-validation"
+  },
+  {
+    "name": "web-animation",
+    "category": "14-frontend-web",
+    "description": "Create smooth web animations with CSS transitions, keyframes, and JS libraries. Use when adding motion to UI.",
+    "path": "skills/14-frontend-web/web-animation"
+  },
+  {
+    "name": "pwa-builder",
+    "category": "14-frontend-web",
+    "description": "Turn a website into a Progressive Web App: manifest, service worker, offline, and install prompts. Use when making installable web apps.",
+    "path": "skills/14-frontend-web/pwa-builder"
+  },
+  {
+    "name": "browser-extension",
+    "category": "14-frontend-web",
+    "description": "Build browser extensions for Chrome and Firefox with Manifest V3: content scripts, background workers, and permissions. Use when creating an extension.",
+    "path": "skills/14-frontend-web/browser-extension"
+  },
+  {
+    "name": "design-tokens",
+    "category": "14-frontend-web",
+    "description": "Define and implement design tokens for color, type, spacing, and theming across web apps. Use when building a design system.",
+    "path": "skills/14-frontend-web/design-tokens"
+  },
+  {
+    "name": "canvas-graphics",
+    "category": "14-frontend-web",
+    "description": "Draw and animate with HTML canvas and WebGL: render loops, sprites, particles, and hit-testing. Use when building visual or game-like web pieces.",
+    "path": "skills/14-frontend-web/canvas-graphics"
+  },
+  {
+    "name": "threejs-scene",
+    "category": "14-frontend-web",
+    "description": "Build 3D web scenes with three.js: cameras, lights, materials, models, and animation. Use when creating 3D visuals in the browser.",
+    "path": "skills/14-frontend-web/threejs-scene"
+  },
+  {
+    "name": "charts-d3",
+    "category": "14-frontend-web",
+    "description": "Build custom data visualizations with D3 or Chart.js: scales, axes, transitions, and interaction. Use when charts must be bespoke or interactive.",
+    "path": "skills/14-frontend-web/charts-d3"
+  },
+  {
+    "name": "python-best-practices",
+    "category": "15-languages-and-backend",
+    "description": "Write idiomatic, typed, tested Python: packaging, virtualenvs, dataclasses, async, and tooling. Use when writing or reviewing Python.",
+    "path": "skills/15-languages-and-backend/python-best-practices"
+  },
+  {
+    "name": "rust-ownership-coach",
+    "category": "15-languages-and-backend",
+    "description": "Teach and debug Rust: ownership, borrowing, lifetimes, traits, and error handling. Use when fighting the borrow checker.",
+    "path": "skills/15-languages-and-backend/rust-ownership-coach"
+  },
+  {
+    "name": "go-concurrency",
+    "category": "15-languages-and-backend",
+    "description": "Write Go with goroutines, channels, contexts, and worker pools safely. Use when handling concurrency or fixing races in Go.",
+    "path": "skills/15-languages-and-backend/go-concurrency"
+  },
+  {
+    "name": "node-typescript-api",
+    "category": "15-languages-and-backend",
+    "description": "Build Node.js APIs in TypeScript with Express or Fastify, validation, middleware, and testing. Use when creating a backend service.",
+    "path": "skills/15-languages-and-backend/node-typescript-api"
+  },
+  {
+    "name": "java-spring-boot",
+    "category": "15-languages-and-backend",
+    "description": "Build Spring Boot services: controllers, JPA, config, security, and testing. Use when working in the Java backend ecosystem.",
+    "path": "skills/15-languages-and-backend/java-spring-boot"
+  },
+  {
+    "name": "csharp-dotnet",
+    "category": "15-languages-and-backend",
+    "description": "Write modern C# and .NET: ASP.NET Core, LINQ, async/await, dependency injection, and EF Core. Use when working in .NET.",
+    "path": "skills/15-languages-and-backend/csharp-dotnet"
+  },
+  {
+    "name": "cpp-modern",
+    "category": "15-languages-and-backend",
+    "description": "Write modern C++ (17/20): RAII, smart pointers, templates, STL, and build tooling. Use when writing or debugging C++.",
+    "path": "skills/15-languages-and-backend/cpp-modern"
+  },
+  {
+    "name": "swift-language",
+    "category": "15-languages-and-backend",
+    "description": "Write idiomatic Swift: optionals, protocols, value types, concurrency with async/await and actors. Use when coding in Swift.",
+    "path": "skills/15-languages-and-backend/swift-language"
+  },
+  {
+    "name": "lua-scripting",
+    "category": "15-languages-and-backend",
+    "description": "Write Lua for games and tools: tables, metatables, coroutines, and embedding. Use for Love2D, Roblox-style scripting, or config logic.",
+    "path": "skills/15-languages-and-backend/lua-scripting"
+  },
+  {
+    "name": "php-laravel",
+    "category": "15-languages-and-backend",
+    "description": "Build PHP apps with Laravel: routing, Eloquent, queues, validation, and testing. Use when working in Laravel.",
+    "path": "skills/15-languages-and-backend/php-laravel"
+  },
+  {
+    "name": "ruby-on-rails",
+    "category": "15-languages-and-backend",
+    "description": "Build Rails apps following conventions: models, controllers, ActiveRecord, and testing. Use when working in Rails.",
+    "path": "skills/15-languages-and-backend/ruby-on-rails"
+  },
+  {
+    "name": "elixir-otp",
+    "category": "15-languages-and-backend",
+    "description": "Build fault-tolerant systems with Elixir, OTP, GenServers, and Phoenix. Use for concurrent or real-time backends.",
+    "path": "skills/15-languages-and-backend/elixir-otp"
+  },
+  {
+    "name": "graphql-server",
+    "category": "15-languages-and-backend",
+    "description": "Design and build GraphQL servers: schema, resolvers, dataloaders, auth, and pagination. Use when building or optimizing a GraphQL API.",
+    "path": "skills/15-languages-and-backend/graphql-server"
+  },
+  {
+    "name": "websocket-realtime",
+    "category": "15-languages-and-backend",
+    "description": "Build realtime features with WebSockets or SSE: presence, rooms, reconnection, and scaling. Use for chat, live updates, and multiplayer.",
+    "path": "skills/15-languages-and-backend/websocket-realtime"
+  },
+  {
+    "name": "queues-and-workers",
+    "category": "15-languages-and-backend",
+    "description": "Design background jobs with queues, retries, dead letters, and idempotency. Use when offloading slow or unreliable work.",
+    "path": "skills/15-languages-and-backend/queues-and-workers"
+  },
+  {
+    "name": "caching-strategy",
+    "category": "15-languages-and-backend",
+    "description": "Design caching: browser, CDN, application, and database layers with invalidation. Use when speeding up reads or fixing stale data.",
+    "path": "skills/15-languages-and-backend/caching-strategy"
+  },
+  {
+    "name": "auth-implementation",
+    "category": "15-languages-and-backend",
+    "description": "Implement authentication and authorization: sessions, JWT, OAuth/OIDC, passwords, and roles. Use when adding login or access control.",
+    "path": "skills/15-languages-and-backend/auth-implementation"
+  },
+  {
+    "name": "design-patterns",
+    "category": "15-languages-and-backend",
+    "description": "Apply software design patterns appropriately: strategy, observer, factory, adapter, and more. Use when structuring code or choosing an abstraction.",
+    "path": "skills/15-languages-and-backend/design-patterns"
+  },
+  {
+    "name": "clean-architecture",
+    "category": "15-languages-and-backend",
+    "description": "Structure applications with layers, ports and adapters, and clear dependency direction. Use when a codebase is tangled.",
+    "path": "skills/15-languages-and-backend/clean-architecture"
+  },
+  {
+    "name": "monolith-vs-microservices",
+    "category": "15-languages-and-backend",
+    "description": "Decide between monolith, modular monolith, and microservices based on team and scale. Use when planning system architecture.",
+    "path": "skills/15-languages-and-backend/monolith-vs-microservices"
+  },
+  {
+    "name": "ux-heuristic-review",
+    "category": "16-design-and-ux",
+    "description": "Review interfaces with Nielsen's usability heuristics and report issues by severity. Use when evaluating a design, screenshot, or flow.",
+    "path": "skills/16-design-and-ux/ux-heuristic-review"
+  },
+  {
+    "name": "user-flow-mapper",
+    "category": "16-design-and-ux",
+    "description": "Map user flows and journeys with steps, decisions, and edge cases. Use when planning how users move through a product.",
+    "path": "skills/16-design-and-ux/user-flow-mapper"
+  },
+  {
+    "name": "wireframe-spec",
+    "category": "16-design-and-ux",
+    "description": "Describe wireframes for screens with layout, components, content, and states. Use when sketching UI before design or build.",
+    "path": "skills/16-design-and-ux/wireframe-spec"
+  },
+  {
+    "name": "color-palette-builder",
+    "category": "16-design-and-ux",
+    "description": "Create accessible color palettes with contrast checks, scales, and usage rules. Use when picking brand or UI colors.",
+    "path": "skills/16-design-and-ux/color-palette-builder"
+  },
+  {
+    "name": "typography-system",
+    "category": "16-design-and-ux",
+    "description": "Select and pair fonts and define a type scale and hierarchy. Use when styling text for web, print, or apps.",
+    "path": "skills/16-design-and-ux/typography-system"
+  },
+  {
+    "name": "logo-brief",
+    "category": "16-design-and-ux",
+    "description": "Write brand and logo design briefs and critique concepts. Use when commissioning or evaluating identity design.",
+    "path": "skills/16-design-and-ux/logo-brief"
+  },
+  {
+    "name": "app-icon-and-assets",
+    "category": "16-design-and-ux",
+    "description": "Plan app icons, splash screens, and asset sets with sizes and platform guidelines. Use when preparing store or app assets.",
+    "path": "skills/16-design-and-ux/app-icon-and-assets"
+  },
+  {
+    "name": "design-critique",
+    "category": "16-design-and-ux",
+    "description": "Give constructive visual design critique on hierarchy, spacing, alignment, and consistency. Use when the user shares a design for feedback.",
+    "path": "skills/16-design-and-ux/design-critique"
+  },
+  {
+    "name": "microcopy-writer",
+    "category": "16-design-and-ux",
+    "description": "Write UI microcopy: buttons, errors, empty states, tooltips, and onboarding. Use when wording interface text.",
+    "path": "skills/16-design-and-ux/microcopy-writer"
+  },
+  {
+    "name": "onboarding-flow",
+    "category": "16-design-and-ux",
+    "description": "Design onboarding that gets users to their first success fast. Use when users sign up but don't activate.",
+    "path": "skills/16-design-and-ux/onboarding-flow"
+  },
+  {
+    "name": "usability-test-plan",
+    "category": "16-design-and-ux",
+    "description": "Plan and run usability tests: tasks, script, participants, and analysis. Use when validating a design with real users.",
+    "path": "skills/16-design-and-ux/usability-test-plan"
+  },
+  {
+    "name": "design-system-docs",
+    "category": "16-design-and-ux",
+    "description": "Document design system components with usage, variants, states, and accessibility. Use when building or documenting a component library.",
+    "path": "skills/16-design-and-ux/design-system-docs"
+  },
+  {
+    "name": "seo-content-strategy",
+    "category": "17-marketing-and-growth",
+    "description": "Plan SEO content with keyword research, intent mapping, topic clusters, and briefs. Use when growing organic traffic.",
+    "path": "skills/17-marketing-and-growth/seo-content-strategy"
+  },
+  {
+    "name": "blog-post-writer",
+    "category": "17-marketing-and-growth",
+    "description": "Write engaging blog posts with strong structure, examples, and calls to action. Use when drafting articles.",
+    "path": "skills/17-marketing-and-growth/blog-post-writer"
+  },
+  {
+    "name": "social-media-planner",
+    "category": "17-marketing-and-growth",
+    "description": "Plan social media content calendars with formats, hooks, and posting cadence for each platform. Use when growing an audience.",
+    "path": "skills/17-marketing-and-growth/social-media-planner"
+  },
+  {
+    "name": "email-newsletter",
+    "category": "17-marketing-and-growth",
+    "description": "Write and structure email newsletters and drip sequences with strong subject lines. Use when building email marketing.",
+    "path": "skills/17-marketing-and-growth/email-newsletter"
+  },
+  {
+    "name": "youtube-strategy",
+    "category": "17-marketing-and-growth",
+    "description": "Plan YouTube channels and videos: niche, titles, thumbnails, hooks, and retention. Use when starting or growing a channel.",
+    "path": "skills/17-marketing-and-growth/youtube-strategy"
+  },
+  {
+    "name": "tiktok-short-form",
+    "category": "17-marketing-and-growth",
+    "description": "Create short-form video concepts with hooks, pacing, captions, and trends. Use for TikTok, Reels, and Shorts.",
+    "path": "skills/17-marketing-and-growth/tiktok-short-form"
+  },
+  {
+    "name": "brand-positioning",
+    "category": "17-marketing-and-growth",
+    "description": "Define brand positioning, voice, and messaging pillars. Use when clarifying how a business should be perceived.",
+    "path": "skills/17-marketing-and-growth/brand-positioning"
+  },
+  {
+    "name": "ad-copy-writer",
+    "category": "17-marketing-and-growth",
+    "description": "Write paid ad copy for search and social with variations and testing plans. Use for Google, Meta, or other ads.",
+    "path": "skills/17-marketing-and-growth/ad-copy-writer"
+  },
+  {
+    "name": "growth-experiments",
+    "category": "17-marketing-and-growth",
+    "description": "Design growth experiments with hypotheses, ICE scoring, and learning loops. Use when finding scalable acquisition or retention levers.",
+    "path": "skills/17-marketing-and-growth/growth-experiments"
+  },
+  {
+    "name": "product-hunt-launch",
+    "category": "17-marketing-and-growth",
+    "description": "Plan a product launch on Product Hunt or similar: assets, timing, outreach, and follow-up. Use when launching a product publicly.",
+    "path": "skills/17-marketing-and-growth/product-hunt-launch"
+  },
+  {
+    "name": "content-repurposing",
+    "category": "17-marketing-and-growth",
+    "description": "Turn one piece of content into many formats across channels. Use when scaling content output.",
+    "path": "skills/17-marketing-and-growth/content-repurposing"
+  },
+  {
+    "name": "press-release-writer",
+    "category": "17-marketing-and-growth",
+    "description": "Write press releases and media pitches with strong news angles. Use when announcing launches or milestones.",
+    "path": "skills/17-marketing-and-growth/press-release-writer"
+  },
+  {
+    "name": "community-building",
+    "category": "17-marketing-and-growth",
+    "description": "Build and manage online communities on Discord, forums, or social. Use when starting a community around a product or interest.",
+    "path": "skills/17-marketing-and-growth/community-building"
+  },
+  {
+    "name": "customer-persona-builder",
+    "category": "17-marketing-and-growth",
+    "description": "Create evidence-based customer personas and jobs-to-be-done. Use when clarifying target audience.",
+    "path": "skills/17-marketing-and-growth/customer-persona-builder"
+  },
+  {
+    "name": "investing-basics",
+    "category": "18-finance-and-investing",
+    "description": "Explain investing fundamentals: index funds, diversification, risk, compounding, and fees. Use when someone is learning to invest.",
+    "path": "skills/18-finance-and-investing/investing-basics"
+  },
+  {
+    "name": "compound-interest-calculator",
+    "category": "18-finance-and-investing",
+    "description": "Calculate compound growth, loan payoff, and savings goals with formulas and tables. Use when projecting savings or debt.",
+    "path": "skills/18-finance-and-investing/compound-interest-calculator"
+  },
+  {
+    "name": "debt-payoff-planner",
+    "category": "18-finance-and-investing",
+    "description": "Compare avalanche and snowball debt payoff strategies with timelines. Use when paying down debt.",
+    "path": "skills/18-finance-and-investing/debt-payoff-planner"
+  },
+  {
+    "name": "stock-analysis-framework",
+    "category": "18-finance-and-investing",
+    "description": "Analyze companies with fundamentals: business model, margins, growth, valuation, and risks. Use when researching a stock or company.",
+    "path": "skills/18-finance-and-investing/stock-analysis-framework"
+  },
+  {
+    "name": "startup-financial-model",
+    "category": "18-finance-and-investing",
+    "description": "Build startup financial models: unit economics, CAC, LTV, burn, runway, and fundraising needs. Use when planning a startup's finances.",
+    "path": "skills/18-finance-and-investing/startup-financial-model"
+  },
+  {
+    "name": "valuation-basics",
+    "category": "18-finance-and-investing",
+    "description": "Explain valuation methods: DCF, multiples, and comparables for businesses. Use when estimating what a company is worth.",
+    "path": "skills/18-finance-and-investing/valuation-basics"
+  },
+  {
+    "name": "tax-concepts-explainer",
+    "category": "18-finance-and-investing",
+    "description": "Explain general tax concepts like deductions, credits, brackets, and business expenses. Use when the user wants to understand taxes in general.",
+    "path": "skills/18-finance-and-investing/tax-concepts-explainer"
+  },
+  {
+    "name": "freelancer-finances",
+    "category": "18-finance-and-investing",
+    "description": "Organize freelance and side-business finances: invoicing, quarterly set-asides, expenses, and rates. Use when self-employed.",
+    "path": "skills/18-finance-and-investing/freelancer-finances"
+  },
+  {
+    "name": "rent-vs-buy-analysis",
+    "category": "18-finance-and-investing",
+    "description": "Compare renting and buying a home with total cost, opportunity cost, and sensitivity. Use when weighing a housing decision.",
+    "path": "skills/18-finance-and-investing/rent-vs-buy-analysis"
+  },
+  {
+    "name": "expense-tracker-design",
+    "category": "18-finance-and-investing",
+    "description": "Design simple expense tracking systems with categories, tools, and review habits. Use when starting to track spending.",
+    "path": "skills/18-finance-and-investing/expense-tracker-design"
+  },
+  {
+    "name": "crypto-concepts-explainer",
+    "category": "18-finance-and-investing",
+    "description": "Explain blockchain and crypto concepts, wallets, and risks neutrally. Use when learning how crypto works.",
+    "path": "skills/18-finance-and-investing/crypto-concepts-explainer"
+  },
+  {
+    "name": "pricing-unit-economics",
+    "category": "18-finance-and-investing",
+    "description": "Compute unit economics for products: COGS, margins, fees, and break-even volumes. Use when checking if a product is profitable.",
+    "path": "skills/18-finance-and-investing/pricing-unit-economics"
+  },
+  {
+    "name": "sales-discovery-call",
+    "category": "19-sales-and-customer",
+    "description": "Plan and run sales discovery calls with questions that uncover pain, budget, and decision process. Use before sales conversations.",
+    "path": "skills/19-sales-and-customer/sales-discovery-call"
+  },
+  {
+    "name": "objection-handling",
+    "category": "19-sales-and-customer",
+    "description": "Prepare responses to common sales objections with empathy and evidence. Use when prospects push back.",
+    "path": "skills/19-sales-and-customer/objection-handling"
+  },
+  {
+    "name": "sales-proposal-writer",
+    "category": "19-sales-and-customer",
+    "description": "Write persuasive proposals with problem, solution, scope, pricing, and timeline. Use when responding to a client request.",
+    "path": "skills/19-sales-and-customer/sales-proposal-writer"
+  },
+  {
+    "name": "customer-support-replies",
+    "category": "19-sales-and-customer",
+    "description": "Write empathetic, clear customer support replies and macros. Use when answering tickets or complaints.",
+    "path": "skills/19-sales-and-customer/customer-support-replies"
+  },
+  {
+    "name": "churn-analysis",
+    "category": "19-sales-and-customer",
+    "description": "Analyze why customers leave and design retention actions. Use when churn is rising.",
+    "path": "skills/19-sales-and-customer/churn-analysis"
+  },
+  {
+    "name": "sales-pipeline-review",
+    "category": "19-sales-and-customer",
+    "description": "Review pipeline health: stages, conversion, velocity, and forecast risk. Use when assessing sales performance.",
+    "path": "skills/19-sales-and-customer/sales-pipeline-review"
+  },
+  {
+    "name": "negotiation-for-sellers",
+    "category": "19-sales-and-customer",
+    "description": "Prepare commercial negotiations: value anchors, concessions, and trades. Use when closing deals.",
+    "path": "skills/19-sales-and-customer/negotiation-for-sellers"
+  },
+  {
+    "name": "customer-success-plan",
+    "category": "19-sales-and-customer",
+    "description": "Create customer onboarding and success plans with milestones and health scores. Use for account management.",
+    "path": "skills/19-sales-and-customer/customer-success-plan"
+  },
+  {
+    "name": "faq-and-help-center",
+    "category": "19-sales-and-customer",
+    "description": "Build FAQs and help center articles that deflect tickets. Use when organizing support content.",
+    "path": "skills/19-sales-and-customer/faq-and-help-center"
+  },
+  {
+    "name": "testimonial-and-case-study",
+    "category": "19-sales-and-customer",
+    "description": "Collect testimonials and write case studies with measurable results. Use when building social proof.",
+    "path": "skills/19-sales-and-customer/testimonial-and-case-study"
+  },
+  {
+    "name": "one-on-one-planner",
+    "category": "20-leadership-and-management",
+    "description": "Plan effective 1:1 meetings with agendas, feedback, and growth topics. Use when managing or being managed.",
+    "path": "skills/20-leadership-and-management/one-on-one-planner"
+  },
+  {
+    "name": "feedback-giver",
+    "category": "20-leadership-and-management",
+    "description": "Give clear, kind, actionable feedback using situation-behavior-impact. Use when delivering praise or criticism.",
+    "path": "skills/20-leadership-and-management/feedback-giver"
+  },
+  {
+    "name": "performance-review-writer",
+    "category": "20-leadership-and-management",
+    "description": "Write fair performance reviews with evidence, ratings, and development plans. Use during review cycles.",
+    "path": "skills/20-leadership-and-management/performance-review-writer"
+  },
+  {
+    "name": "team-okr-planner",
+    "category": "20-leadership-and-management",
+    "description": "Set team goals and OKRs aligned with company strategy. Use during planning cycles.",
+    "path": "skills/20-leadership-and-management/team-okr-planner"
+  },
+  {
+    "name": "hiring-process-designer",
+    "category": "20-leadership-and-management",
+    "description": "Design structured hiring processes: scorecards, interview loops, and fair evaluation. Use when recruiting.",
+    "path": "skills/20-leadership-and-management/hiring-process-designer"
+  },
+  {
+    "name": "job-description-writer",
+    "category": "20-leadership-and-management",
+    "description": "Write inclusive, clear job descriptions focused on outcomes. Use when opening a role.",
+    "path": "skills/20-leadership-and-management/job-description-writer"
+  },
+  {
+    "name": "meeting-facilitation",
+    "category": "20-leadership-and-management",
+    "description": "Run effective meetings with agendas, timeboxes, decisions, and follow-up. Use when organizing team meetings or workshops.",
+    "path": "skills/20-leadership-and-management/meeting-facilitation"
+  },
+  {
+    "name": "delegation-framework",
+    "category": "20-leadership-and-management",
+    "description": "Delegate work with clear outcomes, authority, check-ins, and trust. Use when overloaded or developing others.",
+    "path": "skills/20-leadership-and-management/delegation-framework"
+  },
+  {
+    "name": "conflict-mediation",
+    "category": "20-leadership-and-management",
+    "description": "Mediate workplace disagreements with structured listening and interest-based solutions. Use when teammates clash.",
+    "path": "skills/20-leadership-and-management/conflict-mediation"
+  },
+  {
+    "name": "change-management",
+    "category": "20-leadership-and-management",
+    "description": "Plan organizational change: stakeholders, communication, resistance, and rollout. Use when introducing new processes or tools.",
+    "path": "skills/20-leadership-and-management/change-management"
+  },
+  {
+    "name": "strategy-one-pager",
+    "category": "20-leadership-and-management",
+    "description": "Write a concise strategy: diagnosis, guiding policy, and coherent actions. Use when clarifying direction.",
+    "path": "skills/20-leadership-and-management/strategy-one-pager"
+  },
+  {
+    "name": "remote-team-practices",
+    "category": "20-leadership-and-management",
+    "description": "Set up healthy remote team habits: async communication, documentation, and rituals. Use for distributed teams.",
+    "path": "skills/20-leadership-and-management/remote-team-practices"
+  },
+  {
+    "name": "lesson-plan-builder",
+    "category": "21-teaching-and-education",
+    "description": "Build lesson plans with objectives, activities, assessment, and differentiation. Use when teaching a class or workshop.",
+    "path": "skills/21-teaching-and-education/lesson-plan-builder"
+  },
+  {
+    "name": "curriculum-designer",
+    "category": "21-teaching-and-education",
+    "description": "Design courses and curricula with sequencing, projects, and assessments. Use when creating a course.",
+    "path": "skills/21-teaching-and-education/curriculum-designer"
+  },
+  {
+    "name": "quiz-and-exam-writer",
+    "category": "21-teaching-and-education",
+    "description": "Write quizzes and exams with varied question types, answer keys, and rubrics. Use when assessing learners.",
+    "path": "skills/21-teaching-and-education/quiz-and-exam-writer"
+  },
+  {
+    "name": "rubric-builder",
+    "category": "21-teaching-and-education",
+    "description": "Create clear grading rubrics with criteria and performance levels. Use when evaluating assignments.",
+    "path": "skills/21-teaching-and-education/rubric-builder"
+  },
+  {
+    "name": "explain-by-analogy",
+    "category": "21-teaching-and-education",
+    "description": "Explain hard ideas using analogies and everyday examples. Use when teaching abstract concepts.",
+    "path": "skills/21-teaching-and-education/explain-by-analogy"
+  },
+  {
+    "name": "math-tutor",
+    "category": "21-teaching-and-education",
+    "description": "Tutor math step by step from arithmetic to calculus with hints and checks. Use when a student is stuck on a problem.",
+    "path": "skills/21-teaching-and-education/math-tutor"
+  },
+  {
+    "name": "essay-feedback",
+    "category": "21-teaching-and-education",
+    "description": "Give feedback on student essays on thesis, evidence, structure, and style. Use when reviewing writing.",
+    "path": "skills/21-teaching-and-education/essay-feedback"
+  },
+  {
+    "name": "active-learning-activities",
+    "category": "21-teaching-and-education",
+    "description": "Design active learning activities like think-pair-share, jigsaws, and case studies. Use to make sessions interactive.",
+    "path": "skills/21-teaching-and-education/active-learning-activities"
+  },
+  {
+    "name": "homeschool-planner",
+    "category": "21-teaching-and-education",
+    "description": "Plan homeschool schedules, subjects, and resources by age. Use when organizing home education.",
+    "path": "skills/21-teaching-and-education/homeschool-planner"
+  },
+  {
+    "name": "workshop-designer",
+    "category": "21-teaching-and-education",
+    "description": "Design workshops and training sessions with exercises, timing, and materials. Use when running training for adults.",
+    "path": "skills/21-teaching-and-education/workshop-designer"
+  },
+  {
+    "name": "study-skills-coach",
+    "category": "21-teaching-and-education",
+    "description": "Teach study techniques: retrieval practice, spacing, note-taking, and focus. Use when a student wants to learn better.",
+    "path": "skills/21-teaching-and-education/study-skills-coach"
+  },
+  {
+    "name": "presentation-teacher",
+    "category": "21-teaching-and-education",
+    "description": "Teach and review presentation skills: structure, slides, delivery, and Q&A. Use when preparing a talk.",
+    "path": "skills/21-teaching-and-education/presentation-teacher"
+  },
+  {
+    "name": "music-theory-coach",
+    "category": "22-music-and-audio",
+    "description": "Explain music theory: scales, chords, keys, intervals, and progressions. Use when learning or composing.",
+    "path": "skills/22-music-and-audio/music-theory-coach"
+  },
+  {
+    "name": "chord-progression-writer",
+    "category": "22-music-and-audio",
+    "description": "Create chord progressions in styles and keys with voicing and rhythm ideas. Use when songwriting.",
+    "path": "skills/22-music-and-audio/chord-progression-writer"
+  },
+  {
+    "name": "songwriting-coach",
+    "category": "22-music-and-audio",
+    "description": "Coach songwriting: structure, hooks, melody, and lyrics. Use when writing original songs.",
+    "path": "skills/22-music-and-audio/songwriting-coach"
+  },
+  {
+    "name": "mixing-and-mastering",
+    "category": "22-music-and-audio",
+    "description": "Guide mixing and mastering: EQ, compression, levels, panning, and loudness. Use when polishing tracks.",
+    "path": "skills/22-music-and-audio/mixing-and-mastering"
+  },
+  {
+    "name": "sound-design-synthesis",
+    "category": "22-music-and-audio",
+    "description": "Design sounds with synthesis: oscillators, filters, envelopes, and modulation. Use when making synth patches or game audio.",
+    "path": "skills/22-music-and-audio/sound-design-synthesis"
+  },
+  {
+    "name": "beat-making",
+    "category": "22-music-and-audio",
+    "description": "Build drum patterns and beats across genres. Use when producing rhythm tracks.",
+    "path": "skills/22-music-and-audio/beat-making"
+  },
+  {
+    "name": "instrument-practice-plan",
+    "category": "22-music-and-audio",
+    "description": "Plan structured practice for guitar, piano, drums, or voice. Use when learning an instrument.",
+    "path": "skills/22-music-and-audio/instrument-practice-plan"
+  },
+  {
+    "name": "game-audio-design",
+    "category": "22-music-and-audio",
+    "description": "Design game audio: music layers, SFX, mixing, and implementation in engines. Use when adding sound to a game.",
+    "path": "skills/22-music-and-audio/game-audio-design"
+  },
+  {
+    "name": "podcast-producer",
+    "category": "22-music-and-audio",
+    "description": "Plan and produce podcasts: format, episodes, recording, editing, and publishing. Use when starting a show.",
+    "path": "skills/22-music-and-audio/podcast-producer"
+  },
+  {
+    "name": "dj-set-planner",
+    "category": "22-music-and-audio",
+    "description": "Plan DJ sets with energy curves, harmonic mixing, and transitions. Use when preparing a mix.",
+    "path": "skills/22-music-and-audio/dj-set-planner"
+  },
+  {
+    "name": "video-script-writer",
+    "category": "23-video-photo-media",
+    "description": "Write scripts for videos with hooks, structure, and visual cues. Use for YouTube, ads, and explainers.",
+    "path": "skills/23-video-photo-media/video-script-writer"
+  },
+  {
+    "name": "storyboard-builder",
+    "category": "23-video-photo-media",
+    "description": "Create storyboards and shot lists for videos and animations. Use when planning shoots.",
+    "path": "skills/23-video-photo-media/storyboard-builder"
+  },
+  {
+    "name": "video-editing-workflow",
+    "category": "23-video-photo-media",
+    "description": "Organize editing: ingest, rough cut, pacing, color, audio, and export. Use when editing in Premiere, DaVinci, or Final Cut.",
+    "path": "skills/23-video-photo-media/video-editing-workflow"
+  },
+  {
+    "name": "photography-composition",
+    "category": "23-video-photo-media",
+    "description": "Teach composition: rule of thirds, leading lines, light, and framing. Use when improving photos.",
+    "path": "skills/23-video-photo-media/photography-composition"
+  },
+  {
+    "name": "camera-settings-guide",
+    "category": "23-video-photo-media",
+    "description": "Explain exposure: aperture, shutter, ISO, and modes for situations. Use when shooting manually.",
+    "path": "skills/23-video-photo-media/camera-settings-guide"
+  },
+  {
+    "name": "photo-editing-workflow",
+    "category": "23-video-photo-media",
+    "description": "Edit photos in Lightroom or Photoshop: culling, tone, color, and export. Use when processing images.",
+    "path": "skills/23-video-photo-media/photo-editing-workflow"
+  },
+  {
+    "name": "thumbnail-designer",
+    "category": "23-video-photo-media",
+    "description": "Design click-worthy thumbnails with strong focal points and text. Use for videos and posts.",
+    "path": "skills/23-video-photo-media/thumbnail-designer"
+  },
+  {
+    "name": "short-film-planner",
+    "category": "23-video-photo-media",
+    "description": "Plan short films: concept, script, crew, schedule, and budget. Use when producing a short.",
+    "path": "skills/23-video-photo-media/short-film-planner"
+  },
+  {
+    "name": "livestream-setup",
+    "category": "23-video-photo-media",
+    "description": "Set up livestreams: OBS scenes, audio, overlays, and chat tools. Use when starting to stream.",
+    "path": "skills/23-video-photo-media/livestream-setup"
+  },
+  {
+    "name": "subtitle-and-captions",
+    "category": "23-video-photo-media",
+    "description": "Create accurate captions and subtitles with timing and style rules. Use when making video accessible.",
+    "path": "skills/23-video-photo-media/subtitle-and-captions"
+  },
+  {
+    "name": "brand-photography-brief",
+    "category": "23-video-photo-media",
+    "description": "Write briefs for product or brand photoshoots with shot lists and style. Use when planning commercial photos.",
+    "path": "skills/23-video-photo-media/brand-photography-brief"
+  },
+  {
+    "name": "image-prompt-writer",
+    "category": "23-video-photo-media",
+    "description": "Write effective prompts for AI image generators with subject, style, lighting, and composition. Use when generating images.",
+    "path": "skills/23-video-photo-media/image-prompt-writer"
+  },
+  {
+    "name": "blender-modeling",
+    "category": "24-3d-art-and-animation",
+    "description": "Guide 3D modeling in Blender: topology, modifiers, UVs, and materials. Use when making models.",
+    "path": "skills/24-3d-art-and-animation/blender-modeling"
+  },
+  {
+    "name": "character-rigging",
+    "category": "24-3d-art-and-animation",
+    "description": "Rig characters with bones, weights, IK, and controls. Use when preparing models for animation.",
+    "path": "skills/24-3d-art-and-animation/character-rigging"
+  },
+  {
+    "name": "animation-principles",
+    "category": "24-3d-art-and-animation",
+    "description": "Apply the 12 principles of animation: timing, squash, anticipation, and arcs. Use when animating characters or UI.",
+    "path": "skills/24-3d-art-and-animation/animation-principles"
+  },
+  {
+    "name": "shader-writing",
+    "category": "24-3d-art-and-animation",
+    "description": "Write shaders in GLSL, HLSL, or Godot shading language: lighting, effects, and optimization. Use for visual effects.",
+    "path": "skills/24-3d-art-and-animation/shader-writing"
+  },
+  {
+    "name": "texture-and-materials",
+    "category": "24-3d-art-and-animation",
+    "description": "Create PBR materials: albedo, roughness, metallic, and normal maps. Use when texturing 3D assets.",
+    "path": "skills/24-3d-art-and-animation/texture-and-materials"
+  },
+  {
+    "name": "low-poly-art-style",
+    "category": "24-3d-art-and-animation",
+    "description": "Define and produce low-poly art: palettes, flat shading, and optimization. Use for stylized games.",
+    "path": "skills/24-3d-art-and-animation/low-poly-art-style"
+  },
+  {
+    "name": "environment-art",
+    "category": "24-3d-art-and-animation",
+    "description": "Build game environments: blockout, modularity, lighting, and atmosphere. Use when creating levels visually.",
+    "path": "skills/24-3d-art-and-animation/environment-art"
+  },
+  {
+    "name": "vfx-particles",
+    "category": "24-3d-art-and-animation",
+    "description": "Design particle effects for fire, smoke, magic, and impacts. Use when adding visual effects.",
+    "path": "skills/24-3d-art-and-animation/vfx-particles"
+  },
+  {
+    "name": "concept-art-brief",
+    "category": "24-3d-art-and-animation",
+    "description": "Write concept art briefs and critique for characters, creatures, and environments. Use when commissioning art.",
+    "path": "skills/24-3d-art-and-animation/concept-art-brief"
+  },
+  {
+    "name": "sprite-animation",
+    "category": "24-3d-art-and-animation",
+    "description": "Plan 2D sprite animation: frame counts, timing, spritesheets, and engine import. Use for 2D games.",
+    "path": "skills/24-3d-art-and-animation/sprite-animation"
+  },
+  {
+    "name": "arduino-esp32",
+    "category": "25-making-and-hobbies",
+    "description": "Build Arduino and ESP32 projects: sensors, actuators, wiring, and firmware. Use when prototyping electronics.",
+    "path": "skills/25-making-and-hobbies/arduino-esp32"
+  },
+  {
+    "name": "raspberry-pi-projects",
+    "category": "25-making-and-hobbies",
+    "description": "Plan Raspberry Pi projects: setup, GPIO, services, and headless operation. Use for home automation, servers, and kiosks.",
+    "path": "skills/25-making-and-hobbies/raspberry-pi-projects"
+  },
+  {
+    "name": "3d-printing-guide",
+    "category": "25-making-and-hobbies",
+    "description": "Troubleshoot and plan 3D prints: slicer settings, materials, supports, and calibration. Use when prints fail or designing printable parts.",
+    "path": "skills/25-making-and-hobbies/3d-printing-guide"
+  },
+  {
+    "name": "cad-design-basics",
+    "category": "25-making-and-hobbies",
+    "description": "Design parts in CAD (Fusion, FreeCAD, Onshape) with sketches, constraints, and tolerances. Use when modeling physical objects.",
+    "path": "skills/25-making-and-hobbies/cad-design-basics"
+  },
+  {
+    "name": "woodworking-planner",
+    "category": "25-making-and-hobbies",
+    "description": "Plan woodworking projects: cut lists, joinery, finishes, and tool needs. Use when building furniture or shelves.",
+    "path": "skills/25-making-and-hobbies/woodworking-planner"
+  },
+  {
+    "name": "diy-electronics-repair",
+    "category": "25-making-and-hobbies",
+    "description": "Diagnose and repair common household electronics at the component and connector level using safe low-voltage practices. Use when a gadget stops working.",
+    "path": "skills/25-making-and-hobbies/diy-electronics-repair"
+  },
+  {
+    "name": "cooking-recipe-developer",
+    "category": "25-making-and-hobbies",
+    "description": "Develop and adapt recipes with techniques, substitutions, scaling, and timing. Use when cooking.",
+    "path": "skills/25-making-and-hobbies/cooking-recipe-developer"
+  },
+  {
+    "name": "coffee-brewing",
+    "category": "25-making-and-hobbies",
+    "description": "Dial in coffee brewing: grind, ratio, temperature, and method. Use when improving pour-over, espresso, or French press.",
+    "path": "skills/25-making-and-hobbies/coffee-brewing"
+  },
+  {
+    "name": "gardening-planner",
+    "category": "25-making-and-hobbies",
+    "description": "Plan gardens with layout, planting calendar, soil, and companion planting. Use when growing vegetables or flowers.",
+    "path": "skills/25-making-and-hobbies/gardening-planner"
+  },
+  {
+    "name": "bike-maintenance",
+    "category": "25-making-and-hobbies",
+    "description": "Maintain bicycles: drivetrain, brakes, tires, and tune-ups. Use for DIY bike repair.",
+    "path": "skills/25-making-and-hobbies/bike-maintenance"
+  },
+  {
+    "name": "car-maintenance-basics",
+    "category": "25-making-and-hobbies",
+    "description": "Explain routine car maintenance: fluids, tires, filters, and diagnostic codes. Use when understanding vehicle upkeep.",
+    "path": "skills/25-making-and-hobbies/car-maintenance-basics"
+  },
+  {
+    "name": "camping-trip-planner",
+    "category": "25-making-and-hobbies",
+    "description": "Plan camping and hiking trips: route, gear, food, and contingencies. Use when preparing outdoor trips.",
+    "path": "skills/25-making-and-hobbies/camping-trip-planner"
+  },
+  {
+    "name": "board-game-designer",
+    "category": "25-making-and-hobbies",
+    "description": "Design tabletop games: mechanics, components, balance, and playtesting. Use when prototyping a board or card game.",
+    "path": "skills/25-making-and-hobbies/board-game-designer"
+  },
+  {
+    "name": "ttrpg-campaign-builder",
+    "category": "25-making-and-hobbies",
+    "description": "Build tabletop RPG campaigns and sessions with hooks, NPCs, encounters, and maps. Use for D&D or other systems.",
+    "path": "skills/25-making-and-hobbies/ttrpg-campaign-builder"
+  },
+  {
+    "name": "knitting-and-sewing",
+    "category": "25-making-and-hobbies",
+    "description": "Plan sewing and knitting projects: patterns, measurements, fabrics, and techniques. Use for craft projects.",
+    "path": "skills/25-making-and-hobbies/knitting-and-sewing"
+  },
+  {
+    "name": "home-automation",
+    "category": "25-making-and-hobbies",
+    "description": "Set up smart home automation with Home Assistant, sensors, and routines. Use when automating a home.",
+    "path": "skills/25-making-and-hobbies/home-automation"
+  },
+  {
+    "name": "threat-modeling",
+    "category": "26-security-and-privacy",
+    "description": "Threat model systems with STRIDE: assets, trust boundaries, threats, and mitigations. Use when designing or reviewing secure systems.",
+    "path": "skills/26-security-and-privacy/threat-modeling"
+  },
+  {
+    "name": "owasp-checklist",
+    "category": "26-security-and-privacy",
+    "description": "Review web apps against the OWASP Top 10 with fixes. Use when hardening web applications.",
+    "path": "skills/26-security-and-privacy/owasp-checklist"
+  },
+  {
+    "name": "password-and-account-hygiene",
+    "category": "26-security-and-privacy",
+    "description": "Advise on password managers, MFA, passkeys, and recovery planning. Use when securing personal accounts.",
+    "path": "skills/26-security-and-privacy/password-and-account-hygiene"
+  },
+  {
+    "name": "privacy-policy-drafter",
+    "category": "26-security-and-privacy",
+    "description": "Draft plain-language privacy policies and data inventories for apps. Use when launching a product that handles user data.",
+    "path": "skills/26-security-and-privacy/privacy-policy-drafter"
+  },
+  {
+    "name": "secure-code-checklist",
+    "category": "26-security-and-privacy",
+    "description": "Apply secure coding practices: validation, encoding, least privilege, and dependency hygiene. Use during development.",
+    "path": "skills/26-security-and-privacy/secure-code-checklist"
+  },
+  {
+    "name": "dependency-vulnerability-triage",
+    "category": "26-security-and-privacy",
+    "description": "Triage dependency vulnerabilities from audit tools by reachability and severity. Use when security scanners report issues.",
+    "path": "skills/26-security-and-privacy/dependency-vulnerability-triage"
+  },
+  {
+    "name": "home-network-security",
+    "category": "26-security-and-privacy",
+    "description": "Secure a home network: router settings, segmentation, DNS, and updates. Use when hardening home Wi-Fi and devices.",
+    "path": "skills/26-security-and-privacy/home-network-security"
+  },
+  {
+    "name": "api-security-review",
+    "category": "26-security-and-privacy",
+    "description": "Review APIs for authentication, authorization, rate limits, and data exposure. Use when securing endpoints.",
+    "path": "skills/26-security-and-privacy/api-security-review"
+  },
+  {
+    "name": "incident-readiness-plan",
+    "category": "26-security-and-privacy",
+    "description": "Prepare a small team's security incident plan: roles, contacts, and steps. Use before an incident happens.",
+    "path": "skills/26-security-and-privacy/incident-readiness-plan"
+  },
+  {
+    "name": "data-privacy-compliance-overview",
+    "category": "26-security-and-privacy",
+    "description": "Explain GDPR/CCPA concepts: lawful basis, consent, access requests, and retention. Use when understanding privacy obligations.",
+    "path": "skills/26-security-and-privacy/data-privacy-compliance-overview"
+  },
+  {
+    "name": "ctf-and-learning-labs",
+    "category": "26-security-and-privacy",
+    "description": "Guide learning cybersecurity ethically through legal labs, CTFs, and courses. Use when starting security learning.",
+    "path": "skills/26-security-and-privacy/ctf-and-learning-labs"
+  },
+  {
+    "name": "encryption-basics",
+    "category": "26-security-and-privacy",
+    "description": "Explain encryption, hashing, TLS, and key management at a practical level. Use when choosing or understanding crypto.",
+    "path": "skills/26-security-and-privacy/encryption-basics"
+  },
+  {
+    "name": "workflow-automation-designer",
+    "category": "27-automation-and-no-code",
+    "description": "Design automations with triggers, steps, error handling, and monitoring across tools. Use for Zapier, Make, n8n, or scripts.",
+    "path": "skills/27-automation-and-no-code/workflow-automation-designer"
+  },
+  {
+    "name": "n8n-make-zapier",
+    "category": "27-automation-and-no-code",
+    "description": "Build workflows in n8n, Make, and Zapier with webhooks, filters, and data mapping. Use when connecting apps without code.",
+    "path": "skills/27-automation-and-no-code/n8n-make-zapier"
+  },
+  {
+    "name": "google-apps-script",
+    "category": "27-automation-and-no-code",
+    "description": "Automate Google Sheets, Docs, and Gmail with Apps Script. Use when scripting Google Workspace.",
+    "path": "skills/27-automation-and-no-code/google-apps-script"
+  },
+  {
+    "name": "excel-formulas",
+    "category": "27-automation-and-no-code",
+    "description": "Write and debug Excel and Google Sheets formulas: lookups, arrays, dates, and text. Use when spreadsheets misbehave.",
+    "path": "skills/27-automation-and-no-code/excel-formulas"
+  },
+  {
+    "name": "spreadsheet-modeling",
+    "category": "27-automation-and-no-code",
+    "description": "Design clean spreadsheet models with inputs, calculations, and outputs separated. Use when building models in Sheets or Excel.",
+    "path": "skills/27-automation-and-no-code/spreadsheet-modeling"
+  },
+  {
+    "name": "airtable-notion-databases",
+    "category": "27-automation-and-no-code",
+    "description": "Design databases in Notion or Airtable: tables, relations, views, and automations. Use when organizing information.",
+    "path": "skills/27-automation-and-no-code/airtable-notion-databases"
+  },
+  {
+    "name": "obsidian-note-system",
+    "category": "27-automation-and-no-code",
+    "description": "Build a note-taking system in Obsidian or similar: linking, templates, and review. Use when organizing knowledge.",
+    "path": "skills/27-automation-and-no-code/obsidian-note-system"
+  },
+  {
+    "name": "python-automation-scripts",
+    "category": "27-automation-and-no-code",
+    "description": "Write Python scripts to automate files, APIs, spreadsheets, and email. Use for repetitive computer tasks.",
+    "path": "skills/27-automation-and-no-code/python-automation-scripts"
+  },
+  {
+    "name": "api-integration-planner",
+    "category": "27-automation-and-no-code",
+    "description": "Plan integrations between APIs: auth, rate limits, mapping, and retries. Use when connecting two services.",
+    "path": "skills/27-automation-and-no-code/api-integration-planner"
+  },
+  {
+    "name": "email-automation-rules",
+    "category": "27-automation-and-no-code",
+    "description": "Create email filters, templates, and routing rules to reduce inbox load. Use when inbox management is overwhelming.",
+    "path": "skills/27-automation-and-no-code/email-automation-rules"
+  },
+  {
+    "name": "browser-automation",
+    "category": "27-automation-and-no-code",
+    "description": "Automate browsers with Playwright or Puppeteer: testing, forms, and scraping within site terms. Use when scripting web tasks.",
+    "path": "skills/27-automation-and-no-code/browser-automation"
+  },
+  {
+    "name": "personal-dashboard-builder",
+    "category": "27-automation-and-no-code",
+    "description": "Build a personal dashboard aggregating tasks, calendar, and metrics. Use when wanting a single view of your day.",
+    "path": "skills/27-automation-and-no-code/personal-dashboard-builder"
+  },
+  {
+    "name": "prd-writer",
+    "category": "28-product-and-startup",
+    "description": "Write product requirement documents with problem, users, goals, scope, and acceptance criteria. Use when specifying features.",
+    "path": "skills/28-product-and-startup/prd-writer"
+  },
+  {
+    "name": "user-story-writer",
+    "category": "28-product-and-startup",
+    "description": "Write user stories with acceptance criteria and edge cases. Use when planning sprints.",
+    "path": "skills/28-product-and-startup/user-story-writer"
+  },
+  {
+    "name": "roadmap-planner",
+    "category": "28-product-and-startup",
+    "description": "Build product roadmaps with themes, outcomes, and now/next/later horizons. Use when planning direction.",
+    "path": "skills/28-product-and-startup/roadmap-planner"
+  },
+  {
+    "name": "feature-prioritization",
+    "category": "28-product-and-startup",
+    "description": "Prioritize features with RICE, MoSCoW, or Kano. Use when choosing what to build.",
+    "path": "skills/28-product-and-startup/feature-prioritization"
+  },
+  {
+    "name": "mvp-scoping",
+    "category": "28-product-and-startup",
+    "description": "Scope a minimum viable product to test the riskiest assumption fast. Use when starting to build.",
+    "path": "skills/28-product-and-startup/mvp-scoping"
+  },
+  {
+    "name": "product-metrics",
+    "category": "28-product-and-startup",
+    "description": "Define product metrics: activation, retention, engagement, and north star. Use when measuring a product.",
+    "path": "skills/28-product-and-startup/product-metrics"
+  },
+  {
+    "name": "pitch-deck-builder",
+    "category": "28-product-and-startup",
+    "description": "Build investor pitch decks: problem, solution, market, traction, team, and ask. Use when fundraising.",
+    "path": "skills/28-product-and-startup/pitch-deck-builder"
+  },
+  {
+    "name": "startup-idea-generator",
+    "category": "28-product-and-startup",
+    "description": "Generate startup ideas from problems, trends, and personal skills. Use when searching for what to build.",
+    "path": "skills/28-product-and-startup/startup-idea-generator"
+  },
+  {
+    "name": "okr-for-startups",
+    "category": "28-product-and-startup",
+    "description": "Set lightweight OKRs for early-stage teams. Use when aligning a small team.",
+    "path": "skills/28-product-and-startup/okr-for-startups"
+  },
+  {
+    "name": "competitive-teardown",
+    "category": "28-product-and-startup",
+    "description": "Tear down competitor products: features, UX, pricing, and weaknesses. Use when studying the market.",
+    "path": "skills/28-product-and-startup/competitive-teardown"
+  },
+  {
+    "name": "launch-checklist",
+    "category": "28-product-and-startup",
+    "description": "Run a pre-launch checklist: QA, analytics, legal pages, support, and rollback. Use before shipping a product.",
+    "path": "skills/28-product-and-startup/launch-checklist"
+  },
+  {
+    "name": "saas-pricing-tiers",
+    "category": "28-product-and-startup",
+    "description": "Design SaaS pricing tiers, limits, and upgrade triggers. Use when packaging software for sale.",
+    "path": "skills/28-product-and-startup/saas-pricing-tiers"
+  },
+  {
+    "name": "retention-playbook",
+    "category": "28-product-and-startup",
+    "description": "Build retention playbooks: onboarding, habit loops, reminders, and win-back. Use when users churn.",
+    "path": "skills/28-product-and-startup/retention-playbook"
+  },
+  {
+    "name": "user-research-synthesis",
+    "category": "28-product-and-startup",
+    "description": "Synthesize interviews and feedback into themes and decisions. Use when you have notes to make sense of.",
+    "path": "skills/28-product-and-startup/user-research-synthesis"
+  },
+  {
+    "name": "godot-multiplayer",
+    "category": "29-gamedev-engines-and-systems",
+    "description": "Build Godot 4 multiplayer: ENet, authority, spawners, synchronizers, RPCs, lobbies, and prediction. Use for online or co-op Godot games.",
+    "path": "skills/29-gamedev-engines-and-systems/godot-multiplayer"
+  },
+  {
+    "name": "godot-ui-themes",
+    "category": "29-gamedev-engines-and-systems",
+    "description": "Build Godot 4 UI with Control nodes, containers, themes, and responsive layouts. Use for menus, HUDs, and inventories.",
+    "path": "skills/29-gamedev-engines-and-systems/godot-ui-themes"
+  },
+  {
+    "name": "godot-3d-character",
+    "category": "29-gamedev-engines-and-systems",
+    "description": "Create Godot 4 3D character controllers: movement, camera, jumping, slopes, animation trees. Use for 3D games.",
+    "path": "skills/29-gamedev-engines-and-systems/godot-3d-character"
+  },
+  {
+    "name": "godot-2d-platformer",
+    "category": "29-gamedev-engines-and-systems",
+    "description": "Build Godot 4 2D platformers: movement feel, coyote time, buffering, tilemaps, and enemies. Use for platformer prototypes.",
+    "path": "skills/29-gamedev-engines-and-systems/godot-2d-platformer"
+  },
+  {
+    "name": "godot-save-load",
+    "category": "29-gamedev-engines-and-systems",
+    "description": "Implement Godot save and load systems with JSON, resources, versioning, and autosave. Use for persistence.",
+    "path": "skills/29-gamedev-engines-and-systems/godot-save-load"
+  },
+  {
+    "name": "godot-ai-navigation",
+    "category": "29-gamedev-engines-and-systems",
+    "description": "Add Godot enemy AI: state machines, NavigationAgent, perception, and behavior trees. Use for NPCs and enemies.",
+    "path": "skills/29-gamedev-engines-and-systems/godot-ai-navigation"
+  },
+  {
+    "name": "godot-export-and-release",
+    "category": "29-gamedev-engines-and-systems",
+    "description": "Export and publish Godot games to desktop, web, and mobile with presets and optimization. Use when shipping a Godot project.",
+    "path": "skills/29-gamedev-engines-and-systems/godot-export-and-release"
+  },
+  {
+    "name": "godot-performance",
+    "category": "29-gamedev-engines-and-systems",
+    "description": "Optimize Godot games: profiling, draw calls, physics, pooling, and GDScript tuning. Use when frame rate drops.",
+    "path": "skills/29-gamedev-engines-and-systems/godot-performance"
+  },
+  {
+    "name": "unity-csharp",
+    "category": "29-gamedev-engines-and-systems",
+    "description": "Write Unity C# with MonoBehaviours, ScriptableObjects, coroutines, and the new Input System. Use when developing in Unity.",
+    "path": "skills/29-gamedev-engines-and-systems/unity-csharp"
+  },
+  {
+    "name": "unreal-blueprints-cpp",
+    "category": "29-gamedev-engines-and-systems",
+    "description": "Work in Unreal with Blueprints and C++: gameplay framework, replication, and performance. Use for Unreal projects.",
+    "path": "skills/29-gamedev-engines-and-systems/unreal-blueprints-cpp"
+  },
+  {
+    "name": "game-state-machines",
+    "category": "29-gamedev-engines-and-systems",
+    "description": "Implement finite and hierarchical state machines for players, enemies, and game flow. Use when logic is a tangle of booleans.",
+    "path": "skills/29-gamedev-engines-and-systems/game-state-machines"
+  },
+  {
+    "name": "inventory-and-items",
+    "category": "29-gamedev-engines-and-systems",
+    "description": "Design inventory, items, equipment, and crafting systems with data-driven definitions. Use for RPGs and survival games.",
+    "path": "skills/29-gamedev-engines-and-systems/inventory-and-items"
+  },
+  {
+    "name": "combat-system-design",
+    "category": "29-gamedev-engines-and-systems",
+    "description": "Design melee, ranged, and ability combat: hitboxes, cooldowns, damage models, and feedback. Use for action games.",
+    "path": "skills/29-gamedev-engines-and-systems/combat-system-design"
+  },
+  {
+    "name": "game-camera-systems",
+    "category": "29-gamedev-engines-and-systems",
+    "description": "Create game cameras: follow, look-ahead, shake, cinematic, and split-screen. Use for 2D and 3D cameras.",
+    "path": "skills/29-gamedev-engines-and-systems/game-camera-systems"
+  },
+  {
+    "name": "emulator-frontend-ui",
+    "category": "29-gamedev-engines-and-systems",
+    "description": "Design emulator or game-launcher frontends: library views, controller navigation, artwork, and settings, for legally obtained software. Use when building a launcher UI.",
+    "path": "skills/29-gamedev-engines-and-systems/emulator-frontend-ui"
+  },
+  {
+    "name": "game-jam-playbook",
+    "category": "29-gamedev-engines-and-systems",
+    "description": "Plan and finish game jams: scope, schedule, theme interpretation, and submission. Use for jam entries.",
+    "path": "skills/29-gamedev-engines-and-systems/game-jam-playbook"
+  },
+  {
+    "name": "game-monetization-ethics",
+    "category": "29-gamedev-engines-and-systems",
+    "description": "Plan fair game monetization: premium, DLC, ads, and cosmetic items without dark patterns. Use when pricing games.",
+    "path": "skills/29-gamedev-engines-and-systems/game-monetization-ethics"
+  },
+  {
+    "name": "steam-page-and-launch",
+    "category": "29-gamedev-engines-and-systems",
+    "description": "Prepare a Steam or itch.io page: capsule art, trailer, description, wishlists, and launch timing. Use when releasing a game.",
+    "path": "skills/29-gamedev-engines-and-systems/steam-page-and-launch"
+  },
+  {
+    "name": "swiftui-views",
+    "category": "30-mobile-apps",
+    "description": "Build iOS UIs with SwiftUI: layout, state, navigation, lists, and animations. Use when creating iPhone or iPad apps.",
+    "path": "skills/30-mobile-apps/swiftui-views"
+  },
+  {
+    "name": "kotlin-android",
+    "category": "30-mobile-apps",
+    "description": "Build Android apps with Kotlin and Jetpack Compose: state, navigation, Room, and coroutines. Use for Android development.",
+    "path": "skills/30-mobile-apps/kotlin-android"
+  },
+  {
+    "name": "flutter-dart",
+    "category": "30-mobile-apps",
+    "description": "Build cross-platform apps with Flutter: widgets, state, navigation, and platform channels. Use for Flutter projects.",
+    "path": "skills/30-mobile-apps/flutter-dart"
+  },
+  {
+    "name": "react-native",
+    "category": "30-mobile-apps",
+    "description": "Build apps with React Native and Expo: navigation, native modules, and performance. Use for cross-platform mobile.",
+    "path": "skills/30-mobile-apps/react-native"
+  },
+  {
+    "name": "app-store-release",
+    "category": "30-mobile-apps",
+    "description": "Publish apps on the App Store and Google Play: listings, review guidelines, signing, and updates. Use when shipping a mobile app.",
+    "path": "skills/30-mobile-apps/app-store-release"
+  },
+  {
+    "name": "mobile-ux-patterns",
+    "category": "30-mobile-apps",
+    "description": "Apply mobile UX patterns: navigation, gestures, thumb zones, and offline behavior. Use when designing mobile interfaces.",
+    "path": "skills/30-mobile-apps/mobile-ux-patterns"
+  },
+  {
+    "name": "offline-first-sync",
+    "category": "30-mobile-apps",
+    "description": "Design offline-first apps with local storage, sync queues, and conflict resolution. Use when apps must work without connectivity.",
+    "path": "skills/30-mobile-apps/offline-first-sync"
+  },
+  {
+    "name": "push-notifications",
+    "category": "30-mobile-apps",
+    "description": "Implement push notifications with APNs and FCM, permissions, and relevance. Use when adding notifications.",
+    "path": "skills/30-mobile-apps/push-notifications"
+  },
+  {
+    "name": "mobile-performance",
+    "category": "30-mobile-apps",
+    "description": "Optimize mobile apps: startup time, memory, battery, and scrolling smoothness. Use when apps feel slow.",
+    "path": "skills/30-mobile-apps/mobile-performance"
+  },
+  {
+    "name": "in-app-purchases",
+    "category": "30-mobile-apps",
+    "description": "Implement in-app purchases and subscriptions with StoreKit and Play Billing. Use when monetizing mobile apps.",
+    "path": "skills/30-mobile-apps/in-app-purchases"
+  },
+  {
+    "name": "rag-system-design",
+    "category": "31-ai-and-llm-engineering",
+    "description": "Design retrieval-augmented generation: chunking, embeddings, vector stores, reranking, and evaluation. Use when grounding LLMs in your documents.",
+    "path": "skills/31-ai-and-llm-engineering/rag-system-design"
+  },
+  {
+    "name": "llm-evals",
+    "category": "31-ai-and-llm-engineering",
+    "description": "Build evaluation suites for LLM apps: test sets, graders, regressions, and metrics. Use when measuring prompt or model changes.",
+    "path": "skills/31-ai-and-llm-engineering/llm-evals"
+  },
+  {
+    "name": "tool-use-and-function-calling",
+    "category": "31-ai-and-llm-engineering",
+    "description": "Design tools for LLM function calling: schemas, descriptions, error handling, and safety. Use when giving models actions.",
+    "path": "skills/31-ai-and-llm-engineering/tool-use-and-function-calling"
+  },
+  {
+    "name": "prompt-patterns",
+    "category": "31-ai-and-llm-engineering",
+    "description": "Apply prompting patterns: few-shot, chain of thought, structured output, and role setup. Use when improving model reliability.",
+    "path": "skills/31-ai-and-llm-engineering/prompt-patterns"
+  },
+  {
+    "name": "structured-output-json",
+    "category": "31-ai-and-llm-engineering",
+    "description": "Get reliable JSON from LLMs with schemas, validation, and repair loops. Use when parsing model output.",
+    "path": "skills/31-ai-and-llm-engineering/structured-output-json"
+  },
+  {
+    "name": "ai-agent-architecture",
+    "category": "31-ai-and-llm-engineering",
+    "description": "Architect AI agents: planning loops, memory, tool routing, and guardrails. Use when building autonomous workflows.",
+    "path": "skills/31-ai-and-llm-engineering/ai-agent-architecture"
+  },
+  {
+    "name": "embeddings-and-search",
+    "category": "31-ai-and-llm-engineering",
+    "description": "Build semantic search with embeddings, hybrid retrieval, and metadata filters. Use when searching text by meaning.",
+    "path": "skills/31-ai-and-llm-engineering/embeddings-and-search"
+  },
+  {
+    "name": "llm-cost-and-latency",
+    "category": "31-ai-and-llm-engineering",
+    "description": "Reduce LLM cost and latency with caching, smaller models, batching, and prompt trimming. Use when bills or response times are too high.",
+    "path": "skills/31-ai-and-llm-engineering/llm-cost-and-latency"
+  },
+  {
+    "name": "ai-safety-guardrails",
+    "category": "31-ai-and-llm-engineering",
+    "description": "Add guardrails to AI apps: input filtering, output checks, prompt-injection defense, and logging. Use before shipping AI features.",
+    "path": "skills/31-ai-and-llm-engineering/ai-safety-guardrails"
+  },
+  {
+    "name": "fine-tuning-guide",
+    "category": "31-ai-and-llm-engineering",
+    "description": "Decide whether and how to fine-tune models: data prep, methods, and evaluation. Use when prompting isn't enough.",
+    "path": "skills/31-ai-and-llm-engineering/fine-tuning-guide"
+  },
+  {
+    "name": "chatbot-conversation-design",
+    "category": "31-ai-and-llm-engineering",
+    "description": "Design chatbot conversations: persona, flows, fallbacks, and handoff. Use when building assistants.",
+    "path": "skills/31-ai-and-llm-engineering/chatbot-conversation-design"
+  },
+  {
+    "name": "claude-api-integration",
+    "category": "31-ai-and-llm-engineering",
+    "description": "Integrate the Claude API: messages, system prompts, tools, streaming, and error handling. Use when building apps on Claude.",
+    "path": "skills/31-ai-and-llm-engineering/claude-api-integration"
+  },
+  {
+    "name": "voice-assistant-design",
+    "category": "31-ai-and-llm-engineering",
+    "description": "Design voice interfaces: wake words, turn-taking, speech recognition, and TTS. Use when building voice apps.",
+    "path": "skills/31-ai-and-llm-engineering/voice-assistant-design"
+  },
+  {
+    "name": "ai-product-ideas",
+    "category": "31-ai-and-llm-engineering",
+    "description": "Brainstorm AI product ideas from workflows with repetitive judgment or text work. Use when exploring what to build with AI.",
+    "path": "skills/31-ai-and-llm-engineering/ai-product-ideas"
+  },
+  {
+    "name": "dataset-curation",
+    "category": "31-ai-and-llm-engineering",
+    "description": "Curate and label datasets for ML and evals: sourcing, quality, bias, and licensing. Use when building training or test data.",
+    "path": "skills/31-ai-and-llm-engineering/dataset-curation"
+  },
+  {
+    "name": "multi-agent-workflows",
+    "category": "31-ai-and-llm-engineering",
+    "description": "Design multi-agent systems with roles, handoffs, and shared state. Use when one agent isn't enough.",
+    "path": "skills/31-ai-and-llm-engineering/multi-agent-workflows"
+  },
+  {
+    "name": "novel-outliner",
+    "category": "32-creative-writing",
+    "description": "Outline novels with premise, acts, character arcs, and chapter beats. Use when planning a book.",
+    "path": "skills/32-creative-writing/novel-outliner"
+  },
+  {
+    "name": "short-story-workshop",
+    "category": "32-creative-writing",
+    "description": "Draft and revise short stories: hook, conflict, turn, and ending. Use when writing short fiction.",
+    "path": "skills/32-creative-writing/short-story-workshop"
+  },
+  {
+    "name": "screenplay-formatter",
+    "category": "32-creative-writing",
+    "description": "Write and format screenplays with scenes, action lines, and dialogue. Use for film and TV scripts.",
+    "path": "skills/32-creative-writing/screenplay-formatter"
+  },
+  {
+    "name": "poetry-craft",
+    "category": "32-creative-writing",
+    "description": "Write original poems with imagery, rhythm, and form guidance, from free verse to sonnets. Use when composing or critiquing poetry.",
+    "path": "skills/32-creative-writing/poetry-craft"
+  },
+  {
+    "name": "plot-hole-finder",
+    "category": "32-creative-writing",
+    "description": "Find plot holes and continuity errors in stories. Use when reviewing a draft's logic.",
+    "path": "skills/32-creative-writing/plot-hole-finder"
+  },
+  {
+    "name": "fantasy-magic-system",
+    "category": "32-creative-writing",
+    "description": "Design magic systems with rules, costs, limits, and consequences. Use for fantasy and game worlds.",
+    "path": "skills/32-creative-writing/fantasy-magic-system"
+  },
+  {
+    "name": "villain-and-conflict",
+    "category": "32-creative-writing",
+    "description": "Create compelling antagonists and conflicts with believable motives. Use when writing opposition.",
+    "path": "skills/32-creative-writing/villain-and-conflict"
+  },
+  {
+    "name": "dialogue-polish",
+    "category": "32-creative-writing",
+    "description": "Polish dialogue: voice, subtext, rhythm, and tags. Use when dialogue sounds stiff.",
+    "path": "skills/32-creative-writing/dialogue-polish"
+  },
+  {
+    "name": "writing-prompts-and-sprints",
+    "category": "32-creative-writing",
+    "description": "Generate writing prompts and run timed sprints to beat blocks. Use when stuck or wanting daily practice.",
+    "path": "skills/32-creative-writing/writing-prompts-and-sprints"
+  },
+  {
+    "name": "fanfiction-and-roleplay-scenes",
+    "category": "32-creative-writing",
+    "description": "Write original scenes and collaborative roleplay with consistent characters and tone. Use for interactive fiction.",
+    "path": "skills/32-creative-writing/fanfiction-and-roleplay-scenes"
+  },
+  {
+    "name": "story-structure-analyzer",
+    "category": "32-creative-writing",
+    "description": "Analyze story structure using three-act, save-the-cat, and hero's journey. Use when diagnosing pacing.",
+    "path": "skills/32-creative-writing/story-structure-analyzer"
+  },
+  {
+    "name": "interactive-fiction-design",
+    "category": "32-creative-writing",
+    "description": "Design branching narrative and interactive fiction with Ink, Twine, or Yarn. Use when writing choice-based stories.",
+    "path": "skills/32-creative-writing/interactive-fiction-design"
+  },
+  {
+    "name": "public-speaking-coach",
+    "category": "33-communication-and-social",
+    "description": "Coach public speaking: structure, openings, delivery, and nerves-friendly rehearsal. Use before talks.",
+    "path": "skills/33-communication-and-social/public-speaking-coach"
+  },
+  {
+    "name": "difficult-conversation-prep",
+    "category": "33-communication-and-social",
+    "description": "Prepare for hard conversations with outcomes, framing, and scripts. Use when you must deliver tough news or set boundaries.",
+    "path": "skills/33-communication-and-social/difficult-conversation-prep"
+  },
+  {
+    "name": "networking-coach",
+    "category": "33-communication-and-social",
+    "description": "Build professional networks with outreach, follow-ups, and value-first habits. Use when growing connections.",
+    "path": "skills/33-communication-and-social/networking-coach"
+  },
+  {
+    "name": "apology-and-repair",
+    "category": "33-communication-and-social",
+    "description": "Write sincere apologies and repair plans. Use when you need to make amends.",
+    "path": "skills/33-communication-and-social/apology-and-repair"
+  },
+  {
+    "name": "persuasive-argument",
+    "category": "33-communication-and-social",
+    "description": "Build persuasive arguments with claims, evidence, and counterpoints ethically. Use when making a case.",
+    "path": "skills/33-communication-and-social/persuasive-argument"
+  },
+  {
+    "name": "toast-and-speech-writer",
+    "category": "33-communication-and-social",
+    "description": "Write toasts, eulogies-adjacent tributes, and speeches for weddings and events. Use for special occasions.",
+    "path": "skills/33-communication-and-social/toast-and-speech-writer"
+  },
+  {
+    "name": "linkedin-profile",
+    "category": "33-communication-and-social",
+    "description": "Write and optimize professional profiles and posts. Use when presenting yourself online.",
+    "path": "skills/33-communication-and-social/linkedin-profile"
+  },
+  {
+    "name": "cover-letter-writer",
+    "category": "33-communication-and-social",
+    "description": "Write tailored cover letters and application messages. Use when applying for jobs.",
+    "path": "skills/33-communication-and-social/cover-letter-writer"
+  },
+  {
+    "name": "resume-builder",
+    "category": "33-communication-and-social",
+    "description": "Build and tighten resumes with impact bullets and clean structure. Use when updating a CV.",
+    "path": "skills/33-communication-and-social/resume-builder"
+  },
+  {
+    "name": "small-talk-and-rapport",
+    "category": "33-communication-and-social",
+    "description": "Practice conversation skills: questions, listening, and keeping dialogue flowing. Use when wanting to connect.",
+    "path": "skills/33-communication-and-social/small-talk-and-rapport"
+  },
+  {
+    "name": "text-message-reply",
+    "category": "33-communication-and-social",
+    "description": "Draft thoughtful replies to texts and messages with the right tone. Use when unsure what to say.",
+    "path": "skills/33-communication-and-social/text-message-reply"
+  },
+  {
+    "name": "event-planner",
+    "category": "33-communication-and-social",
+    "description": "Plan parties and events: budget, timeline, vendors, and run-of-show. Use when organizing gatherings.",
+    "path": "skills/33-communication-and-social/event-planner"
+  },
+  {
+    "name": "math-problem-solver",
+    "category": "34-math-and-science",
+    "description": "Solve math problems step by step across algebra, geometry, calculus, and discrete math. Use when working through homework or proofs.",
+    "path": "skills/34-math-and-science/math-problem-solver"
+  },
+  {
+    "name": "proof-writing",
+    "category": "34-math-and-science",
+    "description": "Write and check mathematical proofs: direct, contradiction, induction. Use when proving statements.",
+    "path": "skills/34-math-and-science/proof-writing"
+  },
+  {
+    "name": "physics-problem-solver",
+    "category": "34-math-and-science",
+    "description": "Solve physics problems with diagrams, knowns, equations, units, and sanity checks. Use for mechanics, E&M, and thermo.",
+    "path": "skills/34-math-and-science/physics-problem-solver"
+  },
+  {
+    "name": "unit-conversion-and-estimation",
+    "category": "34-math-and-science",
+    "description": "Convert units and do Fermi estimates with clear assumptions. Use for quick quantitative reasoning.",
+    "path": "skills/34-math-and-science/unit-conversion-and-estimation"
+  },
+  {
+    "name": "probability-puzzles",
+    "category": "34-math-and-science",
+    "description": "Solve probability problems with counting, conditional probability, and Bayes. Use when computing odds.",
+    "path": "skills/34-math-and-science/probability-puzzles"
+  },
+  {
+    "name": "linear-algebra-intuition",
+    "category": "34-math-and-science",
+    "description": "Explain linear algebra with geometric intuition: vectors, matrices, eigenvalues. Use when learning or applying it.",
+    "path": "skills/34-math-and-science/linear-algebra-intuition"
+  },
+  {
+    "name": "calculus-coach",
+    "category": "34-math-and-science",
+    "description": "Teach calculus: limits, derivatives, integrals, and applications. Use when studying calculus.",
+    "path": "skills/34-math-and-science/calculus-coach"
+  },
+  {
+    "name": "chemistry-concepts",
+    "category": "34-math-and-science",
+    "description": "Explain chemistry concepts: atoms, bonding, reactions, stoichiometry. Use when studying chemistry basics.",
+    "path": "skills/34-math-and-science/chemistry-concepts"
+  },
+  {
+    "name": "scientific-method-helper",
+    "category": "34-math-and-science",
+    "description": "Design experiments and reason about evidence: hypotheses, controls, and confounds. Use for science projects.",
+    "path": "skills/34-math-and-science/scientific-method-helper"
+  },
+  {
+    "name": "science-fair-project",
+    "category": "34-math-and-science",
+    "description": "Plan science fair projects from idea to presentation. Use for students.",
+    "path": "skills/34-math-and-science/science-fair-project"
+  },
+  {
+    "name": "astronomy-basics",
+    "category": "34-math-and-science",
+    "description": "Explain astronomy and space concepts, stargazing basics, and orbital mechanics. Use when curious about the sky.",
+    "path": "skills/34-math-and-science/astronomy-basics"
+  },
+  {
+    "name": "engineering-estimation",
+    "category": "34-math-and-science",
+    "description": "Do back-of-the-envelope engineering calculations: loads, power, flow, and tolerances. Use for design sanity checks.",
+    "path": "skills/34-math-and-science/engineering-estimation"
+  },
+  {
+    "name": "slide-deck-structure",
+    "category": "35-office-and-documents",
+    "description": "Structure presentation decks with story, one idea per slide, and clean visuals. Use when planning slides.",
+    "path": "skills/35-office-and-documents/slide-deck-structure"
+  },
+  {
+    "name": "report-writer",
+    "category": "35-office-and-documents",
+    "description": "Write business and technical reports with executive summary, findings, and recommendations. Use for formal write-ups.",
+    "path": "skills/35-office-and-documents/report-writer"
+  },
+  {
+    "name": "sop-writer",
+    "category": "35-office-and-documents",
+    "description": "Write standard operating procedures with clear steps, roles, and checks. Use when documenting processes.",
+    "path": "skills/35-office-and-documents/sop-writer"
+  },
+  {
+    "name": "checklist-builder",
+    "category": "35-office-and-documents",
+    "description": "Create effective checklists for recurring tasks and launches. Use when reducing errors.",
+    "path": "skills/35-office-and-documents/checklist-builder"
+  },
+  {
+    "name": "contract-plain-english",
+    "category": "35-office-and-documents",
+    "description": "Summarize contracts in plain English and flag unusual clauses to ask a lawyer about. Use when reading agreements.",
+    "path": "skills/35-office-and-documents/contract-plain-english"
+  },
+  {
+    "name": "document-template-maker",
+    "category": "35-office-and-documents",
+    "description": "Create reusable templates for proposals, invoices, briefs, and notes. Use when standardizing documents.",
+    "path": "skills/35-office-and-documents/document-template-maker"
+  },
+  {
+    "name": "meeting-agenda-builder",
+    "category": "35-office-and-documents",
+    "description": "Build agendas with goals, timeboxes, and pre-reads. Use when scheduling meetings.",
+    "path": "skills/35-office-and-documents/meeting-agenda-builder"
+  },
+  {
+    "name": "project-status-report",
+    "category": "35-office-and-documents",
+    "description": "Write concise status reports: progress, risks, decisions, and next steps. Use for stakeholder updates.",
+    "path": "skills/35-office-and-documents/project-status-report"
+  },
+  {
+    "name": "faq-document-builder",
+    "category": "35-office-and-documents",
+    "description": "Compile FAQs from questions and answers with clear structure. Use when documenting common questions.",
+    "path": "skills/35-office-and-documents/faq-document-builder"
+  },
+  {
+    "name": "knowledge-base-organizer",
+    "category": "35-office-and-documents",
+    "description": "Organize team knowledge bases: taxonomy, naming, ownership, and cleanup. Use when docs are chaotic.",
+    "path": "skills/35-office-and-documents/knowledge-base-organizer"
+  },
+  {
+    "name": "translation-and-localization",
+    "category": "35-office-and-documents",
+    "description": "Translate and localize text with tone, idioms, and cultural adaptation. Use when preparing multilingual content.",
+    "path": "skills/35-office-and-documents/translation-and-localization"
+  },
+  {
+    "name": "data-entry-cleanup",
+    "category": "35-office-and-documents",
+    "description": "Standardize and clean lists, names, addresses, and records for import. Use when preparing data for a system.",
+    "path": "skills/35-office-and-documents/data-entry-cleanup"
+  },
+  {
+    "name": "product-listing-writer",
+    "category": "36-ecommerce-and-retail",
+    "description": "Write product titles, bullets, and descriptions that rank and convert on Shopify, Etsy, Amazon, and eBay. Use when creating or improving listings.",
+    "path": "skills/36-ecommerce-and-retail/product-listing-writer"
+  },
+  {
+    "name": "ecommerce-store-setup",
+    "category": "36-ecommerce-and-retail",
+    "description": "Plan an online store: platform choice, catalog, payments, shipping, taxes, and policies. Use when launching a shop.",
+    "path": "skills/36-ecommerce-and-retail/ecommerce-store-setup"
+  },
+  {
+    "name": "dropship-vs-inventory",
+    "category": "36-ecommerce-and-retail",
+    "description": "Compare dropshipping, print-on-demand, wholesale, and making your own products. Use when choosing a sourcing model.",
+    "path": "skills/36-ecommerce-and-retail/dropship-vs-inventory"
+  },
+  {
+    "name": "marketplace-fee-calculator",
+    "category": "36-ecommerce-and-retail",
+    "description": "Calculate net profit after marketplace fees, shipping, and returns across eBay, Etsy, Amazon, and others. Use when pricing items for resale.",
+    "path": "skills/36-ecommerce-and-retail/marketplace-fee-calculator"
+  },
+  {
+    "name": "shipping-and-fulfillment",
+    "category": "36-ecommerce-and-retail",
+    "description": "Plan shipping: carriers, packaging, rates, labels, and returns. Use when sending products to customers.",
+    "path": "skills/36-ecommerce-and-retail/shipping-and-fulfillment"
+  },
+  {
+    "name": "product-photography-setup",
+    "category": "36-ecommerce-and-retail",
+    "description": "Set up DIY product photography with lighting, backdrops, angles, and editing. Use when photographing items to sell.",
+    "path": "skills/36-ecommerce-and-retail/product-photography-setup"
+  },
+  {
+    "name": "cart-abandonment-recovery",
+    "category": "36-ecommerce-and-retail",
+    "description": "Reduce cart abandonment with checkout fixes and recovery emails. Use when shoppers leave before paying.",
+    "path": "skills/36-ecommerce-and-retail/cart-abandonment-recovery"
+  },
+  {
+    "name": "inventory-forecasting",
+    "category": "36-ecommerce-and-retail",
+    "description": "Forecast stock needs from sales velocity, lead times, and seasonality. Use when deciding reorder quantities.",
+    "path": "skills/36-ecommerce-and-retail/inventory-forecasting"
+  },
+  {
+    "name": "etsy-seo",
+    "category": "36-ecommerce-and-retail",
+    "description": "Optimize Etsy shops: tags, titles, categories, and photos for search. Use when improving Etsy visibility.",
+    "path": "skills/36-ecommerce-and-retail/etsy-seo"
+  },
+  {
+    "name": "thrift-and-flip-sourcing",
+    "category": "36-ecommerce-and-retail",
+    "description": "Source resale inventory from thrift stores, estate sales, and auctions with margin math. Use when buying to resell.",
+    "path": "skills/36-ecommerce-and-retail/thrift-and-flip-sourcing"
+  },
+  {
+    "name": "subscription-box-planner",
+    "category": "36-ecommerce-and-retail",
+    "description": "Plan a subscription box business: curation, costs, churn, and logistics. Use when launching recurring product sales.",
+    "path": "skills/36-ecommerce-and-retail/subscription-box-planner"
+  },
+  {
+    "name": "print-on-demand-design",
+    "category": "36-ecommerce-and-retail",
+    "description": "Create print-on-demand designs and mockups with niche research. Use when selling shirts, posters, and mugs.",
+    "path": "skills/36-ecommerce-and-retail/print-on-demand-design"
+  },
+  {
+    "name": "customer-returns-policy",
+    "category": "36-ecommerce-and-retail",
+    "description": "Write fair returns, refunds, and warranty policies. Use when setting store rules.",
+    "path": "skills/36-ecommerce-and-retail/customer-returns-policy"
+  },
+  {
+    "name": "rental-property-analysis",
+    "category": "37-real-estate-and-property",
+    "description": "Analyze rental properties: cash flow, cap rate, cash-on-cash return, and expenses. Use when evaluating an investment property.",
+    "path": "skills/37-real-estate-and-property/rental-property-analysis"
+  },
+  {
+    "name": "home-buying-checklist",
+    "category": "37-real-estate-and-property",
+    "description": "Guide first-time home buying: budget, mortgage prep, inspection, and closing. Use when planning a purchase.",
+    "path": "skills/37-real-estate-and-property/home-buying-checklist"
+  },
+  {
+    "name": "tenant-screening-process",
+    "category": "37-real-estate-and-property",
+    "description": "Design a fair tenant screening process with consistent criteria. Use when renting out property.",
+    "path": "skills/37-real-estate-and-property/tenant-screening-process"
+  },
+  {
+    "name": "lease-reader",
+    "category": "37-real-estate-and-property",
+    "description": "Explain residential lease terms in plain English and flag questions to ask. Use when reviewing a lease.",
+    "path": "skills/37-real-estate-and-property/lease-reader"
+  },
+  {
+    "name": "moving-planner",
+    "category": "37-real-estate-and-property",
+    "description": "Plan a move: timeline, budget, packing, and address changes. Use when relocating.",
+    "path": "skills/37-real-estate-and-property/moving-planner"
+  },
+  {
+    "name": "home-renovation-budget",
+    "category": "37-real-estate-and-property",
+    "description": "Budget renovation projects with scope, contingency, and contractor comparison. Use when remodeling.",
+    "path": "skills/37-real-estate-and-property/home-renovation-budget"
+  },
+  {
+    "name": "airbnb-host-playbook",
+    "category": "37-real-estate-and-property",
+    "description": "Run a short-term rental: listing, pricing, cleaning, reviews, and rules. Use when hosting guests.",
+    "path": "skills/37-real-estate-and-property/airbnb-host-playbook"
+  },
+  {
+    "name": "neighborhood-research",
+    "category": "37-real-estate-and-property",
+    "description": "Research neighborhoods: commute, amenities, costs, and trade-offs. Use when choosing where to live.",
+    "path": "skills/37-real-estate-and-property/neighborhood-research"
+  },
+  {
+    "name": "open-source-launch",
+    "category": "38-open-source-and-community",
+    "description": "Launch an open-source project: license, README, contributing guide, issues, and first release. Use before publishing a repo.",
+    "path": "skills/38-open-source-and-community/open-source-launch"
+  },
+  {
+    "name": "license-chooser",
+    "category": "38-open-source-and-community",
+    "description": "Choose an open-source license: MIT, Apache, GPL, and implications. Use when publishing code.",
+    "path": "skills/38-open-source-and-community/license-chooser"
+  },
+  {
+    "name": "issue-triage",
+    "category": "38-open-source-and-community",
+    "description": "Triage GitHub issues: labels, reproduction, priority, and closing. Use when managing a repository.",
+    "path": "skills/38-open-source-and-community/issue-triage"
+  },
+  {
+    "name": "pull-request-review-guide",
+    "category": "38-open-source-and-community",
+    "description": "Review contributor pull requests constructively with checklists. Use when maintaining projects.",
+    "path": "skills/38-open-source-and-community/pull-request-review-guide"
+  },
+  {
+    "name": "changelog-and-releases",
+    "category": "38-open-source-and-community",
+    "description": "Write changelogs and release notes with semantic versioning. Use when shipping versions.",
+    "path": "skills/38-open-source-and-community/changelog-and-releases"
+  },
+  {
+    "name": "code-of-conduct-and-governance",
+    "category": "38-open-source-and-community",
+    "description": "Set up code of conduct, governance, and moderation for communities. Use when growing a project.",
+    "path": "skills/38-open-source-and-community/code-of-conduct-and-governance"
+  },
+  {
+    "name": "good-first-issues",
+    "category": "38-open-source-and-community",
+    "description": "Create welcoming good-first-issues and onboarding docs for contributors. Use when attracting contributors.",
+    "path": "skills/38-open-source-and-community/good-first-issues"
+  },
+  {
+    "name": "sponsorship-and-funding",
+    "category": "38-open-source-and-community",
+    "description": "Plan open-source funding: sponsors, grants, and dual licensing. Use when sustaining a project.",
+    "path": "skills/38-open-source-and-community/sponsorship-and-funding"
+  },
+  {
+    "name": "monorepo-tooling",
+    "category": "38-open-source-and-community",
+    "description": "Set up monorepos with workspaces, build caching, and shared packages. Use when managing multiple packages.",
+    "path": "skills/38-open-source-and-community/monorepo-tooling"
+  },
+  {
+    "name": "api-docs-generator",
+    "category": "38-open-source-and-community",
+    "description": "Generate API documentation with examples, from OpenAPI or code comments. Use when documenting libraries or services.",
+    "path": "skills/38-open-source-and-community/api-docs-generator"
+  },
+  {
+    "name": "terms-of-service-drafter",
+    "category": "39-legal-and-compliance-lite",
+    "description": "Draft terms of service outlines for websites and apps with key sections. Use when launching a product.",
+    "path": "skills/39-legal-and-compliance-lite/terms-of-service-drafter"
+  },
+  {
+    "name": "nda-explainer",
+    "category": "39-legal-and-compliance-lite",
+    "description": "Explain NDAs: scope, term, exclusions, and red flags. Use when asked to sign one.",
+    "path": "skills/39-legal-and-compliance-lite/nda-explainer"
+  },
+  {
+    "name": "freelance-contract-outline",
+    "category": "39-legal-and-compliance-lite",
+    "description": "Outline freelance contracts: scope, payment, IP, revisions, and termination. Use when starting client work.",
+    "path": "skills/39-legal-and-compliance-lite/freelance-contract-outline"
+  },
+  {
+    "name": "trademark-and-copyright-basics",
+    "category": "39-legal-and-compliance-lite",
+    "description": "Explain trademark, copyright, and fair-use basics for creators. Use when protecting or using creative work.",
+    "path": "skills/39-legal-and-compliance-lite/trademark-and-copyright-basics"
+  },
+  {
+    "name": "gdpr-cookie-banner",
+    "category": "39-legal-and-compliance-lite",
+    "description": "Plan cookie consent and tracking disclosures for websites. Use when adding analytics or ads.",
+    "path": "skills/39-legal-and-compliance-lite/gdpr-cookie-banner"
+  },
+  {
+    "name": "small-claims-guide",
+    "category": "39-legal-and-compliance-lite",
+    "description": "Explain how small claims processes generally work and how to prepare. Use when facing a minor dispute.",
+    "path": "skills/39-legal-and-compliance-lite/small-claims-guide"
+  },
+  {
+    "name": "business-structure-overview",
+    "category": "39-legal-and-compliance-lite",
+    "description": "Compare sole proprietorship, LLC, and corporation at a high level. Use when starting a business.",
+    "path": "skills/39-legal-and-compliance-lite/business-structure-overview"
+  },
+  {
+    "name": "accessibility-compliance",
+    "category": "39-legal-and-compliance-lite",
+    "description": "Explain accessibility compliance expectations (WCAG, ADA, EAA) for digital products. Use when planning compliance work.",
+    "path": "skills/39-legal-and-compliance-lite/accessibility-compliance"
+  },
+  {
+    "name": "chess-improvement",
+    "category": "40-sports-and-game-analysis",
+    "description": "Improve at chess: opening principles, tactics, endgames, and game review. Use when studying chess.",
+    "path": "skills/40-sports-and-game-analysis/chess-improvement"
+  },
+  {
+    "name": "esports-vod-review",
+    "category": "40-sports-and-game-analysis",
+    "description": "Review gameplay recordings for decision-making, positioning, and mechanics. Use when improving at competitive games.",
+    "path": "skills/40-sports-and-game-analysis/esports-vod-review"
+  },
+  {
+    "name": "sports-stats-analysis",
+    "category": "40-sports-and-game-analysis",
+    "description": "Analyze sports statistics with per-minute rates, efficiency, and context. Use when evaluating players or teams.",
+    "path": "skills/40-sports-and-game-analysis/sports-stats-analysis"
+  },
+  {
+    "name": "fantasy-sports-strategy",
+    "category": "40-sports-and-game-analysis",
+    "description": "Build fantasy sports strategy: drafting, waivers, and lineup decisions. Use when playing fantasy leagues.",
+    "path": "skills/40-sports-and-game-analysis/fantasy-sports-strategy"
+  },
+  {
+    "name": "tournament-organizer",
+    "category": "40-sports-and-game-analysis",
+    "description": "Organize tournaments: brackets, scheduling, rules, and communication. Use when running events.",
+    "path": "skills/40-sports-and-game-analysis/tournament-organizer"
+  },
+  {
+    "name": "game-strategy-analysis",
+    "category": "40-sports-and-game-analysis",
+    "description": "Analyze strategy in board games and video games: openings, resources, and tempo. Use when learning a competitive game.",
+    "path": "skills/40-sports-and-game-analysis/game-strategy-analysis"
+  },
+  {
+    "name": "speedrun-route-planner",
+    "category": "40-sports-and-game-analysis",
+    "description": "Plan speedrun routes: splits, tricks, risk, and practice. Use when learning or routing a speedrun.",
+    "path": "skills/40-sports-and-game-analysis/speedrun-route-planner"
+  },
+  {
+    "name": "team-practice-planner",
+    "category": "40-sports-and-game-analysis",
+    "description": "Plan team practices and drills for amateur sports. Use when coaching.",
+    "path": "skills/40-sports-and-game-analysis/team-practice-planner"
+  },
+  {
+    "name": "unity-ui-toolkit",
+    "category": "41-unity-unreal-deep-dives",
+    "description": "Build Unity UI with UI Toolkit and uGUI: layouts, data binding, and scaling. Use when creating menus and HUDs in Unity.",
+    "path": "skills/41-unity-unreal-deep-dives/unity-ui-toolkit"
+  },
+  {
+    "name": "unity-addressables",
+    "category": "41-unity-unreal-deep-dives",
+    "description": "Manage assets with Unity Addressables: groups, loading, memory, and updates. Use when optimizing content delivery.",
+    "path": "skills/41-unity-unreal-deep-dives/unity-addressables"
+  },
+  {
+    "name": "unity-dots-ecs",
+    "category": "41-unity-unreal-deep-dives",
+    "description": "Use Unity DOTS and ECS for high-performance simulation. Use when handling thousands of entities.",
+    "path": "skills/41-unity-unreal-deep-dives/unity-dots-ecs"
+  },
+  {
+    "name": "unity-shader-graph",
+    "category": "41-unity-unreal-deep-dives",
+    "description": "Create effects with Unity Shader Graph and HLSL. Use when making visual effects in Unity.",
+    "path": "skills/41-unity-unreal-deep-dives/unity-shader-graph"
+  },
+  {
+    "name": "unity-multiplayer-netcode",
+    "category": "41-unity-unreal-deep-dives",
+    "description": "Build multiplayer in Unity with Netcode for GameObjects or Mirror. Use for online games.",
+    "path": "skills/41-unity-unreal-deep-dives/unity-multiplayer-netcode"
+  },
+  {
+    "name": "unreal-gameplay-ability-system",
+    "category": "41-unity-unreal-deep-dives",
+    "description": "Implement abilities, effects, and attributes with Unreal's Gameplay Ability System. Use for RPG and action combat.",
+    "path": "skills/41-unity-unreal-deep-dives/unreal-gameplay-ability-system"
+  },
+  {
+    "name": "unreal-niagara-vfx",
+    "category": "41-unity-unreal-deep-dives",
+    "description": "Create Niagara VFX in Unreal: emitters, modules, and optimization. Use for effects.",
+    "path": "skills/41-unity-unreal-deep-dives/unreal-niagara-vfx"
+  },
+  {
+    "name": "unreal-level-streaming",
+    "category": "41-unity-unreal-deep-dives",
+    "description": "Use World Partition and level streaming for large Unreal worlds. Use when building open worlds.",
+    "path": "skills/41-unity-unreal-deep-dives/unreal-level-streaming"
+  },
+  {
+    "name": "unreal-multiplayer-replication",
+    "category": "41-unity-unreal-deep-dives",
+    "description": "Replicate gameplay in Unreal: ownership, RPCs, relevancy, and prediction. Use for networked games.",
+    "path": "skills/41-unity-unreal-deep-dives/unreal-multiplayer-replication"
+  },
+  {
+    "name": "engine-choice-guide",
+    "category": "41-unity-unreal-deep-dives",
+    "description": "Choose between Godot, Unity, Unreal, and others for a project. Use when starting a new game.",
+    "path": "skills/41-unity-unreal-deep-dives/engine-choice-guide"
+  },
+  {
+    "name": "japan-travel-planner",
+    "category": "42-travel-and-languages",
+    "description": "Plan Japan trips: regions, rail passes, lodging, food, and etiquette. Use when visiting Japan.",
+    "path": "skills/42-travel-and-languages/japan-travel-planner"
+  },
+  {
+    "name": "japanese-learning",
+    "category": "42-travel-and-languages",
+    "description": "Learn Japanese: kana, kanji, grammar patterns, vocabulary, and immersion. Use when studying Japanese.",
+    "path": "skills/42-travel-and-languages/japanese-learning"
+  },
+  {
+    "name": "spanish-learning",
+    "category": "42-travel-and-languages",
+    "description": "Learn Spanish with conjugation, vocabulary, listening, and conversation practice. Use when studying Spanish.",
+    "path": "skills/42-travel-and-languages/spanish-learning"
+  },
+  {
+    "name": "road-trip-planner",
+    "category": "42-travel-and-languages",
+    "description": "Plan road trips: route, stops, budget, and vehicle prep. Use when driving long distances.",
+    "path": "skills/42-travel-and-languages/road-trip-planner"
+  },
+  {
+    "name": "budget-travel-hacks",
+    "category": "42-travel-and-languages",
+    "description": "Travel cheaper with flexible dates, hostels, transit, and local food. Use when budgets are tight.",
+    "path": "skills/42-travel-and-languages/budget-travel-hacks"
+  },
+  {
+    "name": "travel-packing-list",
+    "category": "42-travel-and-languages",
+    "description": "Build packing lists by destination, weather, and trip length. Use when preparing luggage.",
+    "path": "skills/42-travel-and-languages/travel-packing-list"
+  },
+  {
+    "name": "language-exchange-practice",
+    "category": "42-travel-and-languages",
+    "description": "Practice languages through roleplay, corrections, and vocabulary drills. Use when wanting conversation practice.",
+    "path": "skills/42-travel-and-languages/language-exchange-practice"
+  },
+  {
+    "name": "learn-to-read-faster",
+    "category": "42-travel-and-languages",
+    "description": "Improve reading speed and comprehension with practical techniques. Use when wanting to read more efficiently.",
+    "path": "skills/42-travel-and-languages/learn-to-read-faster"
+  },
+  {
+    "name": "rust-systems-programming",
+    "category": "43-systems-and-embedded",
+    "description": "Write systems code in Rust: traits, error handling, async, FFI, and cargo workflows. Use for CLIs, services, and performance-critical tools.",
+    "path": "skills/43-systems-and-embedded/rust-systems-programming"
+  },
+  {
+    "name": "cpp-memory-and-performance",
+    "category": "43-systems-and-embedded",
+    "description": "Debug and optimize C++ memory and performance: leaks, cache behavior, sanitizers, and profiling. Use when C++ crashes or runs slowly.",
+    "path": "skills/43-systems-and-embedded/cpp-memory-and-performance"
+  },
+  {
+    "name": "embedded-firmware",
+    "category": "43-systems-and-embedded",
+    "description": "Design embedded firmware: interrupts, timers, state machines, low power, and drivers. Use for microcontroller projects.",
+    "path": "skills/43-systems-and-embedded/embedded-firmware"
+  },
+  {
+    "name": "rtos-and-concurrency",
+    "category": "43-systems-and-embedded",
+    "description": "Use FreeRTOS or Zephyr: tasks, queues, mutexes, and priority pitfalls. Use when firmware needs multiple tasks.",
+    "path": "skills/43-systems-and-embedded/rtos-and-concurrency"
+  },
+  {
+    "name": "serial-protocols",
+    "category": "43-systems-and-embedded",
+    "description": "Implement and debug I2C, SPI, UART, and CAN communication. Use when talking to sensors and devices.",
+    "path": "skills/43-systems-and-embedded/serial-protocols"
+  },
+  {
+    "name": "assembly-and-reverse-reading",
+    "category": "43-systems-and-embedded",
+    "description": "Read and write basic assembly and understand compiler output for your own code. Use when learning how code maps to hardware.",
+    "path": "skills/43-systems-and-embedded/assembly-and-reverse-reading"
+  },
+  {
+    "name": "operating-system-concepts",
+    "category": "43-systems-and-embedded",
+    "description": "Explain OS concepts: processes, scheduling, memory, filesystems, and syscalls. Use when learning systems fundamentals.",
+    "path": "skills/43-systems-and-embedded/operating-system-concepts"
+  },
+  {
+    "name": "networking-fundamentals",
+    "category": "43-systems-and-embedded",
+    "description": "Explain networking: TCP/IP, DNS, HTTP, TLS, NAT, and troubleshooting with ping, traceroute, and tcpdump. Use when debugging connectivity.",
+    "path": "skills/43-systems-and-embedded/networking-fundamentals"
+  },
+  {
+    "name": "compiler-and-parser-basics",
+    "category": "43-systems-and-embedded",
+    "description": "Build lexers, parsers, and interpreters for small languages or config formats. Use when creating a DSL or scripting layer.",
+    "path": "skills/43-systems-and-embedded/compiler-and-parser-basics"
+  },
+  {
+    "name": "concurrency-debugging",
+    "category": "43-systems-and-embedded",
+    "description": "Find and fix race conditions, deadlocks, and thread-safety bugs. Use when behavior is non-deterministic.",
+    "path": "skills/43-systems-and-embedded/concurrency-debugging"
+  },
+  {
+    "name": "godot-shaders-visual",
+    "category": "44-godot-advanced",
+    "description": "Write Godot 4 canvas_item and spatial shaders: outlines, dissolve, water, toon, and screen effects. Use for visual polish in Godot.",
+    "path": "skills/44-godot-advanced/godot-shaders-visual"
+  },
+  {
+    "name": "godot-procedural-worlds",
+    "category": "44-godot-advanced",
+    "description": "Generate Godot worlds with FastNoiseLite, chunking, tilemaps, and seeded determinism. Use for terrain and roguelike maps.",
+    "path": "skills/44-godot-advanced/godot-procedural-worlds"
+  },
+  {
+    "name": "godot-mod-support",
+    "category": "44-godot-advanced",
+    "description": "Add mod support to Godot games: PCK loading, resource packs, and safe scripting. Use when letting players extend a game.",
+    "path": "skills/44-godot-advanced/godot-mod-support"
+  },
+  {
+    "name": "godot-dialogue-quests",
+    "category": "44-godot-advanced",
+    "description": "Build dialogue and quest systems in Godot with resources, state tracking, and UI. Use for RPGs and story games.",
+    "path": "skills/44-godot-advanced/godot-dialogue-quests"
+  },
+  {
+    "name": "godot-cutscenes-timeline",
+    "category": "44-godot-advanced",
+    "description": "Create cutscenes with AnimationPlayer, tracks, and camera control. Use for scripted sequences.",
+    "path": "skills/44-godot-advanced/godot-cutscenes-timeline"
+  },
+  {
+    "name": "godot-accessibility-options",
+    "category": "44-godot-advanced",
+    "description": "Add accessibility: remappable controls, text scaling, colorblind modes, and subtitles. Use when polishing a Godot game.",
+    "path": "skills/44-godot-advanced/godot-accessibility-options"
+  },
+  {
+    "name": "godot-steam-integration",
+    "category": "44-godot-advanced",
+    "description": "Integrate Steamworks in Godot using GodotSteam: achievements, cloud saves, and overlay. Use when shipping on Steam.",
+    "path": "skills/44-godot-advanced/godot-steam-integration"
+  },
+  {
+    "name": "godot-testing-gut",
+    "category": "44-godot-advanced",
+    "description": "Test Godot code with GUT: unit tests, scene tests, and CI. Use when adding automated testing.",
+    "path": "skills/44-godot-advanced/godot-testing-gut"
+  },
+  {
+    "name": "terminal-productivity",
+    "category": "45-power-user-and-desktop",
+    "description": "Set up a fast terminal workflow: shell config, aliases, fzf, tmux, and dotfiles. Use when customizing the command line.",
+    "path": "skills/45-power-user-and-desktop/terminal-productivity"
+  },
+  {
+    "name": "vim-neovim-guide",
+    "category": "45-power-user-and-desktop",
+    "description": "Learn Vim and Neovim: motions, text objects, macros, and a minimal config. Use when starting or improving with modal editing.",
+    "path": "skills/45-power-user-and-desktop/vim-neovim-guide"
+  },
+  {
+    "name": "vscode-setup",
+    "category": "45-power-user-and-desktop",
+    "description": "Configure VS Code: extensions, settings, tasks, debugging, and snippets for a language. Use when setting up an editor.",
+    "path": "skills/45-power-user-and-desktop/vscode-setup"
+  },
+  {
+    "name": "macos-power-user",
+    "category": "45-power-user-and-desktop",
+    "description": "Use macOS efficiently: shortcuts, Spotlight, Shortcuts app, automation, and window management. Use when working on a Mac.",
+    "path": "skills/45-power-user-and-desktop/macos-power-user"
+  },
+  {
+    "name": "keyboard-shortcuts-mastery",
+    "category": "45-power-user-and-desktop",
+    "description": "Plan learning keyboard shortcuts for your main apps to speed up work. Use when wanting faster workflows.",
+    "path": "skills/45-power-user-and-desktop/keyboard-shortcuts-mastery"
+  },
+  {
+    "name": "file-organization-system",
+    "category": "45-power-user-and-desktop",
+    "description": "Create a file and folder organization system with naming, archives, and backups. Use when files are a mess.",
+    "path": "skills/45-power-user-and-desktop/file-organization-system"
+  }
+]
